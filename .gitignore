@@ -1,0 +1,34 @@
+# Libraries
+*.lvlibp
+*.llb
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+
+# Metadata
+*.aliases
+*.lvlps
+.cache/
+
+GNUmakefile
+Makefile
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+Testing
+.gdb_history
+*build/
+build/~
+.vs/
+*obj/
+*bin/
+*package_src/
+Built/~
