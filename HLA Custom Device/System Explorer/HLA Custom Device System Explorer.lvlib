@@ -9,6 +9,7 @@
 				<Item Name="ActionVIOnCompile.vi" Type="VI" URL="../ActionVIOnCompile.vi"/>
 				<Item Name="ActionVIOnDownload.vi" Type="VI" URL="../ActionVIOnDownload.vi"/>
 				<Item Name="ActionVIOnLoad.vi" Type="VI" URL="../ActionVIOnLoad.vi"/>
+				<Item Name="ActionVIOnShutdown.vi" Type="VI" URL="../ActionVIOnShutdown.vi"/>
 			</Item>
 			<Item Name="Extra Pages" Type="Folder">
 				<Item Name="Attribute.vi" Type="VI" URL="../Attribute.vi"/>
@@ -17,6 +18,7 @@
 				<Item Name="Object.vi" Type="VI" URL="../Object.vi"/>
 				<Item Name="Parameter.vi" Type="VI" URL="../Parameter.vi"/>
 			</Item>
+			<Item Name="Browse FOM RTM.vi" Type="VI" URL="../Browse FOM RTM.vi"/>
 			<Item Name="Export Configuration RTM.vi" Type="VI" URL="../Export Configuration RTM.vi"/>
 			<Item Name="Initialization VI.vi" Type="VI" URL="../Initialization VI.vi"/>
 			<Item Name="Main Page.vi" Type="VI" URL="../Main Page.vi"/>
@@ -26,11 +28,14 @@
 				<Item Name="interaction_json_type.ctl" Type="VI" URL="../FOM/_typedefs/interaction_json_type.ctl"/>
 				<Item Name="object_instance_json_type.ctl" Type="VI" URL="../FOM/_typedefs/object_instance_json_type.ctl"/>
 			</Item>
+			<Item Name="Load FOM info from file (json).vi" Type="VI" URL="../FOM/Load FOM info from file (json).vi"/>
 		</Item>
 		<Item Name="Scripting" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="newSubVI.vit" Type="VI" URL="../newSubVI.vit"/>
 			<Item Name="Create Status Channels.vi" Type="VI" URL="../Scripting/Create Status Channels.vi"/>
 			<Item Name="Initialize System Definition Tree.vi" Type="VI" URL="../Scripting/Initialize System Definition Tree.vi"/>
-			<Item Name="newSubVI.vit" Type="VI" URL="../newSubVI.vit"/>
+			<Item Name="Update system definition tree from fom info.vi" Type="VI" URL="../Scripting/Update system definition tree from fom info.vi"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Load Help File.vi" Type="VI" URL="../Load Help File.vi"/>

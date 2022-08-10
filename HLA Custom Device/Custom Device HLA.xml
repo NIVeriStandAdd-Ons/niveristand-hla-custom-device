@@ -90,6 +90,19 @@
             <Path>Custom Devices\HLA Custom Device\Windows\HLA Custom Device Configuration.llb\Export Configuration RTM.vi</Path>
           </Item2Launch>
         </MenuItem>
+        <MenuItem>
+          <GUID>fcf9f7d6-3962-415c-b9b2-6ca28c0b7467</GUID>
+          <Type>VI</Type>
+          <Execution>default</Execution>
+          <Name>
+            <eng>Browse FOM File</eng>
+            <loc>Browse FOM FIle</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\HLA Custom Device\Windows\HLA Custom Device Configuration.llb\Browse FOM RTM.vi</Path>
+          </Item2Launch>
+        </MenuItem>
       </RunTimeMenu>
       <ButtonList>
         <Button>
@@ -115,6 +128,31 @@
           <Documentation>
             <eng>Export Custom Device Configuration</eng>
             <loc>Export Custom Device Configuration</loc>
+          </Documentation>
+        </Button>
+        <Button>
+          <ID>fcf9f7d6-3962-415c-b9b2-6ca28c0b7467-Button</ID>
+          <Glyph>
+            <Type>To Application Data Dir</Type>
+            <Path>System Explorer\Glyphs\import.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>fcf9f7d6-3962-415c-b9b2-6ca28c0b7467</ReferencedGUID>
+          <ButtonText>
+            <eng>Browse FOM File</eng>
+            <loc>Browse FOM File</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Browse FOM File</eng>
+            <loc>Browse FOM File</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Browse FOM File to import objects and iterations</eng>
+            <loc>Browse FOM File to import objects and iterations</loc>
+          </TipStrip>
+          <Documentation>
+            <eng>Browse FOM File to import objects and iterations</eng>
+            <loc>Browse FOM File to import objects and iterations</loc>
           </Documentation>
         </Button>
       </ButtonList>

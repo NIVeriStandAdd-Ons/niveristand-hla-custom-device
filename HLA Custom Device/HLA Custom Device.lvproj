@@ -2,7 +2,7 @@
 <Project Type="Project" LVVersion="19008000">
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
-		<Property Name="CCSymbols" Type="Str">DEBUG,True;</Property>
+		<Property Name="CCSymbols" Type="Str">DEBUG,False;</Property>
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
 		<Property Name="IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
@@ -20,8 +20,13 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="_Debug" Type="Folder">
+			<Item Name="kill VSC debug port.vi" Type="VI" URL="../_Debug/kill VSC debug port.vi"/>
+			<Item Name="VCD Debug Tools Examples.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/VCD Debug Tools/Examples/VCD Debug Tools Examples.lvlib"/>
+		</Item>
 		<Item Name="_sandbox" Type="Folder">
 			<Item Name="jsonTest.vi" Type="VI" URL="../_sandbox/jsonTest.vi"/>
+			<Item Name="jsonTest_FileRead.vi" Type="VI" URL="../_sandbox/jsonTest_FileRead.vi"/>
 			<Item Name="testArea.vi" Type="VI" URL="../_sandbox/testArea.vi"/>
 		</Item>
 		<Item Name="Help" Type="Folder" URL="../Help">
@@ -39,7 +44,6 @@
 		<Item Name="HLA Custom Device Engine.lvlib" Type="Library" URL="../Engine/HLA Custom Device Engine.lvlib"/>
 		<Item Name="HLA Custom Device Shared.lvlib" Type="Library" URL="../Shared/HLA Custom Device Shared.lvlib"/>
 		<Item Name="HLA Custom Device System Explorer.lvlib" Type="Library" URL="../System Explorer/HLA Custom Device System Explorer.lvlib"/>
-		<Item Name="jsonTest_FileRead.vi" Type="VI" URL="../_sandbox/jsonTest_FileRead.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
@@ -79,8 +83,10 @@
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
+				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
@@ -101,7 +107,8 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="VCD Debug Tools Dependencies.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/VCD Debug Tools/_dependencies/VCD Debug Tools Dependencies.lvlib"/>
-				<Item Name="VCD Debug Tools Examples.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/VCD Debug Tools/Examples/VCD Debug Tools Examples.lvlib"/>
+				<Item Name="VCD_Plotter.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/VCD Debug Tools/Plots/VCD_Plotter.lvlib"/>
+				<Item Name="VCD_Status String.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/VCD Debug Tools/Status String/Sender/VCD_Status String.lvlib"/>
 				<Item Name="VCD_Terminal.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/VCD Debug Tools/Terminal/VCD_Terminal.lvlib"/>
 				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
@@ -109,6 +116,7 @@
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 			</Item>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
