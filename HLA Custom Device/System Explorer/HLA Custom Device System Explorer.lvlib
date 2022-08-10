@@ -21,6 +21,17 @@
 			<Item Name="Initialization VI.vi" Type="VI" URL="../Initialization VI.vi"/>
 			<Item Name="Main Page.vi" Type="VI" URL="../Main Page.vi"/>
 		</Item>
+		<Item Name="FOM" Type="Folder">
+			<Item Name="_typedefs" Type="Folder">
+				<Item Name="interaction_json_type.ctl" Type="VI" URL="../FOM/_typedefs/interaction_json_type.ctl"/>
+				<Item Name="object_instance_json_type.ctl" Type="VI" URL="../FOM/_typedefs/object_instance_json_type.ctl"/>
+			</Item>
+		</Item>
+		<Item Name="Scripting" Type="Folder">
+			<Item Name="Create Status Channels.vi" Type="VI" URL="../Scripting/Create Status Channels.vi"/>
+			<Item Name="Initialize System Definition Tree.vi" Type="VI" URL="../Scripting/Initialize System Definition Tree.vi"/>
+			<Item Name="newSubVI.vit" Type="VI" URL="../newSubVI.vit"/>
+		</Item>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Load Help File.vi" Type="VI" URL="../Load Help File.vi"/>
 		</Item>

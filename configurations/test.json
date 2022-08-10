@@ -1,0 +1,33 @@
+{
+  "objects": [
+    {
+      "name": "a",
+      "attributes": [
+        {
+          "name": "b",
+          "type": "c"
+        },
+        {
+          "name": "d",
+          "type": "e"
+        }
+      ],
+      "instanceId": 1234
+    }
+  ],
+  "interactions": [
+    {
+      "name": "a",
+      "parameters": [
+        {
+          "name": "b",
+          "type": "c"
+        },
+        {
+          "name": "d",
+          "type": "e"
+        }
+      ]
+    }
+  ]
+}

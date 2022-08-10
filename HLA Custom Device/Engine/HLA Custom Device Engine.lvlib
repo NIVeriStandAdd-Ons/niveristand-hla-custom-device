@@ -4,13 +4,16 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">419463168</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="Engine" Type="Folder">
-		<Item Name="Init" Type="Folder"/>
+		<Item Name="Init" Type="Folder">
+			<Item Name="Initialize.vi" Type="VI" URL="../Init/Initialize.vi"/>
+		</Item>
 		<Item Name="Run" Type="Folder">
 			<Item Name="HLA Custom Device.Async.vi" Type="VI" URL="../HLA Custom Device.Async.vi"/>
 		</Item>
 		<Item Name="Shut Down" Type="Folder"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
+		<Item Name="RTinlineRuntimeData.ctl" Type="VI" URL="../RTinlineRuntimeData.ctl"/>
 		<Item Name="RTStateVariables.ctl" Type="VI" URL="../RTStateVariables.ctl"/>
 	</Item>
 	<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
