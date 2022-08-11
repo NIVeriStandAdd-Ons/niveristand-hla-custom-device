@@ -11,6 +11,7 @@
 		<Property Name="IOScan.Priority" Type="UInt">9</Property>
 		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
 		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -46,6 +47,7 @@
 		<Item Name="HLA Custom Device Engine.lvlib" Type="Library" URL="../Engine/HLA Custom Device Engine.lvlib"/>
 		<Item Name="HLA Custom Device Shared.lvlib" Type="Library" URL="../Shared/HLA Custom Device Shared.lvlib"/>
 		<Item Name="HLA Custom Device System Explorer.lvlib" Type="Library" URL="../System Explorer/HLA Custom Device System Explorer.lvlib"/>
+		<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../Engine/RThlaMapHelpers.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -107,6 +109,7 @@
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
 			</Item>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
@@ -124,6 +127,22 @@
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Message Queue.lvlib" Type="Library" URL="../Engine/_subVIs/MessageQueue/Message Queue.lvlib"/>
+			<Item Name="ObjManager.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/ObjectManagement/ObjManager.lvlib"/>
+			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
+			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
+			<Item Name="object_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_type.ctl"/>
+			<Item Name="object_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_map_type.ctl"/>
+			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
+			<Item Name="userEvents_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/userEvents_type.ctl"/>
+			<Item Name="User Events.lvlib" Type="Library" URL="../Engine/_subVIs/UserEvents/User Events.lvlib"/>
+			<Item Name="obj_update_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/obj_update_type.ctl"/>
+			<Item Name="_objInstanceValuesUpdate.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/_objInstanceValuesUpdate.ctl"/>
+			<Item Name="openrti_rti1516eLv.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/library/openrti_rti1516eLv.lvlib"/>
+			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
+			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
+			<Item Name="phvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/phvm.lvlib"/>
+			<Item Name="ahs.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/ahs.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Debug" Type="Source Distribution">
@@ -415,6 +434,7 @@
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
@@ -431,13 +451,25 @@
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="_objInstanceValuesUpdate.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/_objInstanceValuesUpdate.ctl"/>
+			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
+			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
+			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
+			<Item Name="Message Queue.lvlib" Type="Library" URL="../Engine/_subVIs/MessageQueue/Message Queue.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="obj_update_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/obj_update_type.ctl"/>
+			<Item Name="object_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_map_type.ctl"/>
+			<Item Name="object_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_type.ctl"/>
+			<Item Name="ObjManager.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/ObjectManagement/ObjManager.lvlib"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="User Events.lvlib" Type="Library" URL="../Engine/_subVIs/UserEvents/User Events.lvlib"/>
+			<Item Name="userEvents_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/userEvents_type.ctl"/>
+			<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../_Debug/VsDebugLibrary.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine Debug" Type="Source Distribution">
@@ -660,6 +692,7 @@ DirectoryIndex index.htm
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
@@ -676,13 +709,25 @@ DirectoryIndex index.htm
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="_objInstanceValuesUpdate.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/_objInstanceValuesUpdate.ctl"/>
+			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
+			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
+			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
+			<Item Name="Message Queue.lvlib" Type="Library" URL="../Engine/_subVIs/MessageQueue/Message Queue.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="obj_update_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/obj_update_type.ctl"/>
+			<Item Name="object_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_map_type.ctl"/>
+			<Item Name="object_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_type.ctl"/>
+			<Item Name="ObjManager.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/ObjectManagement/ObjManager.lvlib"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="User Events.lvlib" Type="Library" URL="../Engine/_subVIs/UserEvents/User Events.lvlib"/>
+			<Item Name="userEvents_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/userEvents_type.ctl"/>
+			<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../_Debug/VsDebugLibrary.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine Debug" Type="Source Distribution">
@@ -873,6 +918,7 @@ DirectoryIndex index.htm
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
@@ -889,13 +935,31 @@ DirectoryIndex index.htm
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="_objInstanceValuesUpdate.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/_objInstanceValuesUpdate.ctl"/>
+			<Item Name="ahs.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/ahs.lvlib"/>
+			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
+			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
+			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
+			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
+			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
+			<Item Name="Message Queue.lvlib" Type="Library" URL="../Engine/_subVIs/MessageQueue/Message Queue.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="obj_update_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/obj_update_type.ctl"/>
+			<Item Name="object_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_map_type.ctl"/>
+			<Item Name="object_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_type.ctl"/>
+			<Item Name="ObjManager.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/ObjectManagement/ObjManager.lvlib"/>
+			<Item Name="openrti_rti1516eLv.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/library/openrti_rti1516eLv.lvlib"/>
+			<Item Name="phvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/phvm.lvlib"/>
+			<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../Engine/RThlaMapHelpers.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="User Events.lvlib" Type="Library" URL="../Engine/_subVIs/UserEvents/User Events.lvlib"/>
+			<Item Name="userEvents_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/userEvents_type.ctl"/>
+			<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../_Debug/VsDebugLibrary.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine Debug" Type="Source Distribution">
@@ -1087,6 +1151,7 @@ DirectoryIndex index.htm
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
@@ -1103,13 +1168,31 @@ DirectoryIndex index.htm
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="_objInstanceValuesUpdate.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/_objInstanceValuesUpdate.ctl"/>
+			<Item Name="ahs.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/ahs.lvlib"/>
+			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
+			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
+			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
+			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
+			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
+			<Item Name="Message Queue.lvlib" Type="Library" URL="../Engine/_subVIs/MessageQueue/Message Queue.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="obj_update_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/obj_update_type.ctl"/>
+			<Item Name="object_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_map_type.ctl"/>
+			<Item Name="object_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_type.ctl"/>
+			<Item Name="ObjManager.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/ObjectManagement/ObjManager.lvlib"/>
+			<Item Name="openrti_rti1516eLv.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/library/openrti_rti1516eLv.lvlib"/>
+			<Item Name="phvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/phvm.lvlib"/>
+			<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../Engine/RThlaMapHelpers.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="User Events.lvlib" Type="Library" URL="../Engine/_subVIs/UserEvents/User Events.lvlib"/>
+			<Item Name="userEvents_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/userEvents_type.ctl"/>
+			<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../_Debug/VsDebugLibrary.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine Debug" Type="Source Distribution">

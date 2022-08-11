@@ -6,6 +6,7 @@
 	<Item Name="Engine" Type="Folder">
 		<Item Name="Init" Type="Folder">
 			<Item Name="Initialize Engine.vi" Type="VI" URL="../Init/Initialize Engine.vi"/>
+			<Item Name="Initialize HLA helpers.vi" Type="VI" URL="../Init/Initialize HLA helpers.vi"/>
 		</Item>
 		<Item Name="Run" Type="Folder">
 			<Item Name="HLA Custom Device.Async.vi" Type="VI" URL="../HLA Custom Device.Async.vi"/>

@@ -38,13 +38,15 @@
 			<Item Name="Create Status Channels.vi" Type="VI" URL="../Scripting/Create Status Channels.vi"/>
 			<Item Name="Initialize System Definition Tree.vi" Type="VI" URL="../Scripting/Initialize System Definition Tree.vi"/>
 			<Item Name="Update system definition tree from fom info.vi" Type="VI" URL="../Scripting/Update system definition tree from fom info.vi"/>
-			<Item Name="Retrieve Async Section configuration properties (interactions).vi" Type="VI" URL="../Retrieve Async Section configuration properties (interactions).vi"/>
-			<Item Name="Retrieve Async Section group reference.vi" Type="VI" URL="../Retrieve Async Section group reference.vi"/>
+			<Item Name="Get main page properties.vi" Type="VI" URL="../Get main page properties.vi"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Types" Type="Folder"/>
+			<Item Name="Add file to depencencies.vi" Type="VI" URL="../Add file to depencencies.vi"/>
 			<Item Name="Load Help File.vi" Type="VI" URL="../Load Help File.vi"/>
+			<Item Name="Retrieve Async Section configuration properties (interactions).vi" Type="VI" URL="../Retrieve Async Section configuration properties (interactions).vi"/>
+			<Item Name="Retrieve Async Section configuration properties (objects).vi" Type="VI" URL="../Retrieve Async Section configuration properties (objects).vi"/>
+			<Item Name="Retrieve Async Section group reference.vi" Type="VI" URL="../Retrieve Async Section group reference.vi"/>
 		</Item>
-		<Item Name="Types" Type="Folder"/>
 	</Item>
-	<Item Name="Retrieve Async Section configuration properties (objects).vi" Type="VI" URL="../Retrieve Async Section configuration properties (objects).vi"/>
 </Library>

@@ -5,10 +5,12 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="Shared" Type="Folder">
 		<Item Name="Types" Type="Folder">
+			<Item Name="async_rt_state.ctl" Type="VI" URL="../async_rt_state.ctl"/>
 			<Item Name="Compiled.Settings.ctl" Type="VI" URL="../Compiled.Settings.ctl"/>
 			<Item Name="interaction_parameter_configuration.ctl" Type="VI" URL="../interaction_parameter_configuration.ctl"/>
+			<Item Name="main_page_config.ctl" Type="VI" URL="../main_page_config.ctl"/>
+			<Item Name="object_attribute_configuration.ctl" Type="VI" URL="../object_attribute_configuration.ctl"/>
 		</Item>
 		<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 	</Item>
-	<Item Name="object_attribute_configuration.ctl" Type="VI" URL="../object_attribute_configuration.ctl"/>
 </Library>
