@@ -193,7 +193,7 @@
       <GUID>52d4cd88-974f-4360-a8ff-7bc610057bee</GUID>
       <Glyph>
 			<Type>To Application Data Dir</Type>
-			<Path>System Explorer\Glyphs\default fpga category.png</Path>
+			<Path>System Explorer\Glyphs\NI-XNET SignalFrame.png</Path>
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
@@ -208,7 +208,7 @@
       <GUID>53780803-8140-4f62-8208-f49394e419e9</GUID>
       <Glyph>
 			<Type>To Application Data Dir</Type>
-			<Path>System Explorer\Glyphs\default fpga category.png</Path>
+			<Path>System Explorer\Glyphs\event-based.png</Path>
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
@@ -223,7 +223,7 @@
       <GUID>cf0d2834-1ef6-435c-a08f-d62632844e08</GUID>
       <Glyph>
 			<Type>To Application Data Dir</Type>
-			<Path>System Explorer\Glyphs\default fpga category.png</Path>
+			<Path>System Explorer\Glyphs\default fpga channel.png</Path>
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
@@ -238,7 +238,7 @@
       <GUID>b77a7904-c8be-44c8-af97-10fb8448d551</GUID>
       <Glyph>
 			<Type>To Application Data Dir</Type>
-			<Path>System Explorer\Glyphs\default fpga category.png</Path>
+			<Path>System Explorer\Glyphs\default fpga channel.png</Path>
 		</Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>

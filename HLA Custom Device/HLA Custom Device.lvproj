@@ -2,7 +2,7 @@
 <Project Type="Project" LVVersion="19008000">
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
-		<Property Name="CCSymbols" Type="Str">DEBUG,False;</Property>
+		<Property Name="CCSymbols" Type="Str">DEBUG,True;</Property>
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
 		<Property Name="IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
@@ -21,8 +21,10 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="_Debug" Type="Folder">
+			<Item Name="_snippet_.vi" Type="VI" URL="../_Debug/_snippet_.vi"/>
+			<Item Name="DebugView.vi" Type="VI" URL="../_Debug/DebugView.vi"/>
 			<Item Name="kill VSC debug port.vi" Type="VI" URL="../_Debug/kill VSC debug port.vi"/>
-			<Item Name="VCD Debug Tools Examples.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/VCD Debug Tools/Examples/VCD Debug Tools Examples.lvlib"/>
+			<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../_Debug/VsDebugLibrary.lvlib"/>
 		</Item>
 		<Item Name="_sandbox" Type="Folder">
 			<Item Name="jsonTest.vi" Type="VI" URL="../_sandbox/jsonTest.vi"/>
@@ -46,7 +48,6 @@
 		<Item Name="HLA Custom Device System Explorer.lvlib" Type="Library" URL="../System Explorer/HLA Custom Device System Explorer.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
-				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="Advanced System Definition.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NI VeriStand Advanced SysDef API/SysDef API/Advanced System Definition.lvlib"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -83,10 +84,8 @@
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
-				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
@@ -106,17 +105,10 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
-				<Item Name="VCD Debug Tools Dependencies.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/VCD Debug Tools/_dependencies/VCD Debug Tools Dependencies.lvlib"/>
-				<Item Name="VCD_Plotter.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/VCD Debug Tools/Plots/VCD_Plotter.lvlib"/>
-				<Item Name="VCD_Status String.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/VCD Debug Tools/Status String/Sender/VCD_Status String.lvlib"/>
-				<Item Name="VCD_Terminal.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/VCD Debug Tools/Terminal/VCD_Terminal.lvlib"/>
-				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 			</Item>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -1152,7 +1144,7 @@ DirectoryIndex index.htm
 				<Property Name="Bld_buildSpecName" Type="Str">Engine Release</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../Built/HLA Custom Device</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E24CF77A-EDD5-435E-91DE-CAC6522BEA2A}</Property>
@@ -1166,7 +1158,7 @@ DirectoryIndex index.htm
 				<Property Name="Destination[1].path" Type="Path">/Linux_x64</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{76876736-607A-4DF9-B72A-FA567C04234B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{8488569F-04DD-4D1D-9AC6-FB9455BD0937}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/HLA Custom Device Engine.lvlib/RT Driver VI.vi</Property>

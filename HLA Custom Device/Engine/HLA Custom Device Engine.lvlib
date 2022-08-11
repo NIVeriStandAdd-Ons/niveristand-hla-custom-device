@@ -5,7 +5,7 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="Engine" Type="Folder">
 		<Item Name="Init" Type="Folder">
-			<Item Name="Initialize.vi" Type="VI" URL="../Init/Initialize.vi"/>
+			<Item Name="Initialize Engine.vi" Type="VI" URL="../Init/Initialize Engine.vi"/>
 		</Item>
 		<Item Name="Run" Type="Folder">
 			<Item Name="HLA Custom Device.Async.vi" Type="VI" URL="../HLA Custom Device.Async.vi"/>
