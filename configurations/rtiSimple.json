@@ -1,0 +1,29 @@
+{
+  "objects": [
+    {
+      "name": "BaseEntity",
+      "attributes": [
+        {
+          "name": "WorldLocation",
+          "type": "String"
+        }
+      ],
+      "instanceId": 1234
+    }
+  ],
+  "interactions": [
+    {
+      "name": "WeaponFire",
+      "parameters": [
+        {
+          "name": "FuseType",
+          "type": "c"
+        },
+        {
+          "name": "RateOfFire",
+          "type": "e"
+        }
+      ]
+    }
+  ]
+}

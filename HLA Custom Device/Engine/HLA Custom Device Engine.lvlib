@@ -15,6 +15,9 @@
 		<Item Name="Shut Down" Type="Folder"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
+		<Item Name="map_attribute.ctl" Type="VI" URL="../map_attribute.ctl"/>
+		<Item Name="map_attribute_data.ctl" Type="VI" URL="../map_attribute_data.ctl"/>
+		<Item Name="map_object.ctl" Type="VI" URL="../map_object.ctl"/>
 		<Item Name="RTinlineRuntimeData.ctl" Type="VI" URL="../RTinlineRuntimeData.ctl"/>
 		<Item Name="RTStateVariables.ctl" Type="VI" URL="../RTStateVariables.ctl"/>
 	</Item>
