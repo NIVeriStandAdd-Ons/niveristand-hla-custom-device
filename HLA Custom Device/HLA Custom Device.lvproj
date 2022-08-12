@@ -48,6 +48,7 @@
 		<Item Name="HLA Custom Device Engine.lvlib" Type="Library" URL="../Engine/HLA Custom Device Engine.lvlib"/>
 		<Item Name="HLA Custom Device Shared.lvlib" Type="Library" URL="../Shared/HLA Custom Device Shared.lvlib"/>
 		<Item Name="HLA Custom Device System Explorer.lvlib" Type="Library" URL="../System Explorer/HLA Custom Device System Explorer.lvlib"/>
+		<Item Name="HLA Data Management.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Management.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -128,15 +129,12 @@
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Message Queue.lvlib" Type="Library" URL="../Engine/_subVIs/MessageQueue/Message Queue.lvlib"/>
 			<Item Name="ObjManager.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/ObjectManagement/ObjManager.lvlib"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="object_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_type.ctl"/>
 			<Item Name="object_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_map_type.ctl"/>
 			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
-			<Item Name="userEvents_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/userEvents_type.ctl"/>
-			<Item Name="User Events.lvlib" Type="Library" URL="../Engine/_subVIs/UserEvents/User Events.lvlib"/>
 			<Item Name="obj_update_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/obj_update_type.ctl"/>
 			<Item Name="_objInstanceValuesUpdate.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/_objInstanceValuesUpdate.ctl"/>
 			<Item Name="openrti_rti1516eLv.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/library/openrti_rti1516eLv.lvlib"/>
@@ -145,6 +143,7 @@
 			<Item Name="phvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/phvm.lvlib"/>
 			<Item Name="ahs.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/ahs.lvlib"/>
 			<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../Engine/RThlaMapHelpers.ctl"/>
+			<Item Name="interaction_attribute_received_type.ctl" Type="VI" URL="../Engine/interaction_attribute_received_type.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Debug" Type="Source Distribution">
@@ -458,10 +457,10 @@
 			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
 			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
 			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
+			<Item Name="interaction_attribute_received_type.ctl" Type="VI" URL="../Engine/interaction_attribute_received_type.ctl"/>
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="Message Queue.lvlib" Type="Library" URL="../Engine/_subVIs/MessageQueue/Message Queue.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -475,8 +474,6 @@
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="User Events.lvlib" Type="Library" URL="../Engine/_subVIs/UserEvents/User Events.lvlib"/>
-			<Item Name="userEvents_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/userEvents_type.ctl"/>
 			<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../_Debug/VsDebugLibrary.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -722,10 +719,10 @@ DirectoryIndex index.htm
 			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
 			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
 			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
+			<Item Name="interaction_attribute_received_type.ctl" Type="VI" URL="../Engine/interaction_attribute_received_type.ctl"/>
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="Message Queue.lvlib" Type="Library" URL="../Engine/_subVIs/MessageQueue/Message Queue.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -739,8 +736,6 @@ DirectoryIndex index.htm
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="User Events.lvlib" Type="Library" URL="../Engine/_subVIs/UserEvents/User Events.lvlib"/>
-			<Item Name="userEvents_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/userEvents_type.ctl"/>
 			<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../_Debug/VsDebugLibrary.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -954,10 +949,10 @@ DirectoryIndex index.htm
 			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
 			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
 			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
+			<Item Name="interaction_attribute_received_type.ctl" Type="VI" URL="../Engine/interaction_attribute_received_type.ctl"/>
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="Message Queue.lvlib" Type="Library" URL="../Engine/_subVIs/MessageQueue/Message Queue.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -971,8 +966,6 @@ DirectoryIndex index.htm
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="User Events.lvlib" Type="Library" URL="../Engine/_subVIs/UserEvents/User Events.lvlib"/>
-			<Item Name="userEvents_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/userEvents_type.ctl"/>
 			<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../_Debug/VsDebugLibrary.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -1216,10 +1209,10 @@ AddOutputFilter chunkFilter
 			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
 			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
 			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
+			<Item Name="interaction_attribute_received_type.ctl" Type="VI" URL="../Engine/interaction_attribute_received_type.ctl"/>
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="Message Queue.lvlib" Type="Library" URL="../Engine/_subVIs/MessageQueue/Message Queue.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -1233,8 +1226,6 @@ AddOutputFilter chunkFilter
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="User Events.lvlib" Type="Library" URL="../Engine/_subVIs/UserEvents/User Events.lvlib"/>
-			<Item Name="userEvents_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/userEvents_type.ctl"/>
 			<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../_Debug/VsDebugLibrary.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -1284,7 +1275,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/Linux_x64</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{8488569F-04DD-4D1D-9AC6-FB9455BD0937}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{03961858-F1E7-4012-B720-147918F6AB08}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target - Linux x64/HLA Custom Device Engine.lvlib/RT Driver VI.vi</Property>
