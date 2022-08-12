@@ -70,7 +70,7 @@
       <GUID>6f4b2c5e-9a04-4726-97a9-de47f61042c2</GUID>
       <Glyph>
         <Type>To Application Data Dir</Type>
-        <Path>System Explorer\Glyphs\default fpga category.png</Path>
+        <Path>System Explorer\Glyphs\network.png</Path>
       </Glyph>
       <Item2Launch>
         <Type>To Common Doc Dir</Type>
@@ -169,81 +169,95 @@
         <Path>Custom Devices\HLA Custom Device\Windows\HLA Custom Device Configuration.llb\ActionVIOnCompile.vi</Path>
       </ActionVIOnCompile>
     </Page>
-    
-<Page>
-      <Name>
-        <eng>FOM</eng>
-        <loc>FOM</loc>
-      </Name>
-      <GUID>8562ebb4-606d-4f7b-bdb0-39fb194478f7</GUID>
-      <Glyph>
+	<Page>
+	  <Name>
+		<eng>Incoming</eng>
+		<loc>Incoming</loc>
+	  </Name>
+	  <GUID>8562ebb4-606d-4f7b-bdb0-39fb194478f7</GUID>
+	  <Glyph>
 			<Type>To Application Data Dir</Type>
-			<Path>System Explorer\Glyphs\default fpga category.png</Path>
+			<Path>System Explorer\Glyphs\NI-XNET Incoming.png</Path>
 		</Glyph>
-      <Item2Launch>
-        <Type>To Common Doc Dir</Type>
-		<Path>Custom Devices\HLA Custom Device\Windows\HLA Custom Device Configuration.llb\FOM.vi</Path>
-      </Item2Launch>
-    </Page>
-<Page>
-      <Name>
-        <eng>Object</eng>
-        <loc>Object</loc>
-      </Name>
-      <GUID>52d4cd88-974f-4360-a8ff-7bc610057bee</GUID>
-      <Glyph>
+	  <Item2Launch>
+		<Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\HLA Custom Device\Windows\HLA Custom Device Configuration.llb\Incoming.vi</Path>
+	  </Item2Launch>
+	</Page>
+	<Page>
+	  <Name>
+		<eng>Outgoing</eng>
+		<loc>Outgoing</loc>
+	  </Name>
+	  <GUID>afc4cbd0-90d2-4375-83aa-9825c1570c77</GUID>
+	  <Glyph>
 			<Type>To Application Data Dir</Type>
-			<Path>System Explorer\Glyphs\NI-XNET SignalFrame.png</Path>
+			<Path>System Explorer\Glyphs\NI-XNET Outgoing.png</Path>
 		</Glyph>
-      <Item2Launch>
-        <Type>To Common Doc Dir</Type>
+	  <Item2Launch>
+		<Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\HLA Custom Device\Windows\HLA Custom Device Configuration.llb\Outgoing.vi</Path>
+	  </Item2Launch>
+	</Page>
+	<Page>
+	  <Name>
+		<eng>Object</eng>
+		<loc>Object</loc>
+	  </Name>
+	  <GUID>52d4cd88-974f-4360-a8ff-7bc610057bee</GUID>
+	  <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\root.png</Path>
+		</Glyph>
+	  <Item2Launch>
+		<Type>To Common Doc Dir</Type>
 		<Path>Custom Devices\HLA Custom Device\Windows\HLA Custom Device Configuration.llb\Object.vi</Path>
-      </Item2Launch>
-    </Page>
-<Page>
-      <Name>
-        <eng>Interaction</eng>
-        <loc>Interaction</loc>
-      </Name>
-      <GUID>53780803-8140-4f62-8208-f49394e419e9</GUID>
-      <Glyph>
+	  </Item2Launch>
+	</Page>
+	<Page>
+	  <Name>
+		<eng>Interaction</eng>
+		<loc>Interaction</loc>
+	  </Name>
+	  <GUID>53780803-8140-4f62-8208-f49394e419e9</GUID>
+	  <Glyph>
 			<Type>To Application Data Dir</Type>
 			<Path>System Explorer\Glyphs\event-based.png</Path>
 		</Glyph>
-      <Item2Launch>
-        <Type>To Common Doc Dir</Type>
+	  <Item2Launch>
+		<Type>To Common Doc Dir</Type>
 		<Path>Custom Devices\HLA Custom Device\Windows\HLA Custom Device Configuration.llb\Interaction.vi</Path>
-      </Item2Launch>
-    </Page>
-<Page>
-      <Name>
-        <eng>Attribute</eng>
-        <loc>Attribute</loc>
-      </Name>
-      <GUID>cf0d2834-1ef6-435c-a08f-d62632844e08</GUID>
-      <Glyph>
+	  </Item2Launch>
+	</Page>
+	<Page>
+	  <Name>
+		<eng>Attribute</eng>
+		<loc>Attribute</loc>
+	  </Name>
+	  <GUID>cf0d2834-1ef6-435c-a08f-d62632844e08</GUID>
+	  <Glyph>
 			<Type>To Application Data Dir</Type>
-			<Path>System Explorer\Glyphs\default fpga channel.png</Path>
+			<Path>System Explorer\Glyphs\NI-XNET SignalFrame.png</Path>
 		</Glyph>
-      <Item2Launch>
-        <Type>To Common Doc Dir</Type>
+	  <Item2Launch>
+		<Type>To Common Doc Dir</Type>
 		<Path>Custom Devices\HLA Custom Device\Windows\HLA Custom Device Configuration.llb\Attribute.vi</Path>
-      </Item2Launch>
-    </Page>
-<Page>
-      <Name>
-        <eng>Parameter</eng>
-        <loc>Parameter</loc>
-      </Name>
-      <GUID>b77a7904-c8be-44c8-af97-10fb8448d551</GUID>
-      <Glyph>
+	  </Item2Launch>
+	</Page>
+	<Page>
+	  <Name>
+		<eng>Parameter</eng>
+		<loc>Parameter</loc>
+	  </Name>
+	  <GUID>b77a7904-c8be-44c8-af97-10fb8448d551</GUID>
+	  <Glyph>
 			<Type>To Application Data Dir</Type>
-			<Path>System Explorer\Glyphs\default fpga channel.png</Path>
+			<Path>System Explorer\Glyphs\NI-XNET SignalFrame.png</Path>
 		</Glyph>
-      <Item2Launch>
-        <Type>To Common Doc Dir</Type>
+	  <Item2Launch>
+		<Type>To Common Doc Dir</Type>
 		<Path>Custom Devices\HLA Custom Device\Windows\HLA Custom Device Configuration.llb\Parameter.vi</Path>
-      </Item2Launch>
+	  </Item2Launch>
     </Page>
   </Pages>
   <CustomXML>

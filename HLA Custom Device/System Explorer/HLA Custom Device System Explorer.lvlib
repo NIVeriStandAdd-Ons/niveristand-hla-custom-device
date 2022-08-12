@@ -13,9 +13,10 @@
 			</Item>
 			<Item Name="Extra Pages" Type="Folder">
 				<Item Name="Attribute.vi" Type="VI" URL="../Attribute.vi"/>
-				<Item Name="FOM.vi" Type="VI" URL="../FOM.vi"/>
+				<Item Name="Incoming.vi" Type="VI" URL="../Incoming.vi"/>
 				<Item Name="Interaction.vi" Type="VI" URL="../Interaction.vi"/>
 				<Item Name="Object.vi" Type="VI" URL="../Object.vi"/>
+				<Item Name="Outgoing.vi" Type="VI" URL="../Outgoing.vi"/>
 				<Item Name="Parameter.vi" Type="VI" URL="../Parameter.vi"/>
 			</Item>
 			<Item Name="RTM" Type="Folder">
@@ -34,11 +35,15 @@
 		</Item>
 		<Item Name="Scripting" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="HLA data types" Type="Folder">
+				<Item Name="Create Single element (Generic).vi" Type="VI" URL="../Scripting/HLA_DataTypes/Create Single element (Generic).vi"/>
+			</Item>
 			<Item Name="newSubVI.vit" Type="VI" URL="../newSubVI.vit"/>
 			<Item Name="Create Status Channels.vi" Type="VI" URL="../Scripting/Create Status Channels.vi"/>
 			<Item Name="Initialize System Definition Tree.vi" Type="VI" URL="../Scripting/Initialize System Definition Tree.vi"/>
 			<Item Name="Update system definition tree from fom info.vi" Type="VI" URL="../Scripting/Update system definition tree from fom info.vi"/>
 			<Item Name="Get main page properties.vi" Type="VI" URL="../Get main page properties.vi"/>
+			<Item Name="Create Interaction information channels.vi" Type="VI" URL="../Scripting/Create Interaction information channels.vi"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Types" Type="Folder"/>

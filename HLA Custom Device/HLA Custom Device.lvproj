@@ -49,6 +49,7 @@
 		<Item Name="HLA Custom Device Shared.lvlib" Type="Library" URL="../Shared/HLA Custom Device Shared.lvlib"/>
 		<Item Name="HLA Custom Device System Explorer.lvlib" Type="Library" URL="../System Explorer/HLA Custom Device System Explorer.lvlib"/>
 		<Item Name="HLA Data Management.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Management.lvlib"/>
+		<Item Name="interaction_info_received_type.ctl" Type="VI" URL="../Engine/interaction_info_received_type.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -198,7 +199,7 @@
 				<Property Name="Destination[2].path" Type="Path">../Built/NI_AB_PROJECTNAME/Windows/HLA Custom Device Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E84A1697-4E3C-41C5-9EE8-19E182669A62}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9C863628-FFB9-47C4-8E40-ABAA600E1445}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
