@@ -26,6 +26,7 @@
 			<Item Name="DebugView.vi" Type="VI" URL="../_Debug/DebugView.vi"/>
 			<Item Name="kill VSC debug port.vi" Type="VI" URL="../_Debug/kill VSC debug port.vi"/>
 			<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../_Debug/VsDebugLibrary.lvlib"/>
+			<Item Name="Load CD settings.vi" Type="VI" URL="../_Debug/Load CD settings.vi"/>
 		</Item>
 		<Item Name="_sandbox" Type="Folder">
 			<Item Name="jsonTest.vi" Type="VI" URL="../_sandbox/jsonTest.vi"/>
@@ -47,7 +48,6 @@
 		<Item Name="HLA Custom Device Engine.lvlib" Type="Library" URL="../Engine/HLA Custom Device Engine.lvlib"/>
 		<Item Name="HLA Custom Device Shared.lvlib" Type="Library" URL="../Shared/HLA Custom Device Shared.lvlib"/>
 		<Item Name="HLA Custom Device System Explorer.lvlib" Type="Library" URL="../System Explorer/HLA Custom Device System Explorer.lvlib"/>
-		<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../Engine/RThlaMapHelpers.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -110,6 +110,7 @@
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
+				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
 			</Item>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
@@ -143,6 +144,7 @@
 			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
 			<Item Name="phvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/phvm.lvlib"/>
 			<Item Name="ahs.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/ahs.lvlib"/>
+			<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../Engine/RThlaMapHelpers.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Debug" Type="Source Distribution">
@@ -452,7 +454,10 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="_objInstanceValuesUpdate.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/_objInstanceValuesUpdate.ctl"/>
+			<Item Name="ahs.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/ahs.lvlib"/>
+			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
 			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
+			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
@@ -464,6 +469,9 @@
 			<Item Name="object_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_map_type.ctl"/>
 			<Item Name="object_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_type.ctl"/>
 			<Item Name="ObjManager.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/ObjectManagement/ObjManager.lvlib"/>
+			<Item Name="openrti_rti1516eLv.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/library/openrti_rti1516eLv.lvlib"/>
+			<Item Name="phvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/phvm.lvlib"/>
+			<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../Engine/RThlaMapHelpers.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -710,7 +718,10 @@ DirectoryIndex index.htm
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="_objInstanceValuesUpdate.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/_objInstanceValuesUpdate.ctl"/>
+			<Item Name="ahs.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/ahs.lvlib"/>
+			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
 			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
+			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
@@ -722,6 +733,9 @@ DirectoryIndex index.htm
 			<Item Name="object_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_map_type.ctl"/>
 			<Item Name="object_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/object_type.ctl"/>
 			<Item Name="ObjManager.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/ObjectManagement/ObjManager.lvlib"/>
+			<Item Name="openrti_rti1516eLv.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/library/openrti_rti1516eLv.lvlib"/>
+			<Item Name="phvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/phvm.lvlib"/>
+			<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../Engine/RThlaMapHelpers.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -1072,8 +1086,8 @@ DirectoryIndex index.htm
 	</Item>
 	<Item Name="RT CompactRIO Target - Linux x64" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">RT CompactRIO Target - Linux x64</Property>
-		<Property Name="alias.value" Type="Str">0.0.0.0</Property>
-		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,Linux;CPU,x64;DeviceCode,7735;</Property>
+		<Property Name="alias.value" Type="Str">192.168.0.27</Property>
+		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;DeviceCode,7735;CD_MOCKUP,False;TARGET_TYPE,RT;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">7735</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
@@ -1085,13 +1099,14 @@ DirectoryIndex index.htm
 		<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
 		<Property Name="target.getDefault-&gt;WebServer.Port" Type="Int">80</Property>
 		<Property Name="target.getDefault-&gt;WebServer.Timeout" Type="Int">60</Property>
-		<Property Name="target.IOScan.Faults" Type="Str"></Property>
+		<Property Name="target.IOScan.Faults" Type="Str">1.0,0;</Property>
 		<Property Name="target.IOScan.NetVarPeriod" Type="UInt">100</Property>
 		<Property Name="target.IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
 		<Property Name="target.IOScan.Period" Type="UInt">10000</Property>
 		<Property Name="target.IOScan.PowerupMode" Type="UInt">0</Property>
 		<Property Name="target.IOScan.Priority" Type="UInt">0</Property>
 		<Property Name="target.IOScan.ReportModeConflict" Type="Bool">true</Property>
+		<Property Name="target.IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
 		<Property Name="target.IsRemotePanelSupported" Type="Bool">true</Property>
 		<Property Name="target.RTCPULoadMonitoringEnabled" Type="Bool">true</Property>
 		<Property Name="target.RTDebugWebServerHTTPPort" Type="Int">8001</Property>
@@ -1111,6 +1126,34 @@ DirectoryIndex index.htm
 		<Property Name="target.server.vi.access" Type="Str">+*</Property>
 		<Property Name="target.server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.vi.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="target.WebServer.Config" Type="Str">Listen 8000
+
+NI.ServerName default
+DocumentRoot "$LVSERVER_DOCROOT"
+TypesConfig "$LVSERVER_CONFIGROOT/mime.types"
+DirectoryIndex index.htm
+WorkerLimit 10
+InactivityTimeout 60
+
+LoadModulePath "$LVSERVER_MODULEPATHS"
+LoadModule LVAuth lvauthmodule
+LoadModule LVRFP lvrfpmodule
+
+#
+# Pipeline Definition
+#
+
+SetConnector netConnector
+
+AddHandler LVAuth
+AddHandler LVRFP
+
+AddHandler fileHandler ""
+
+AddOutputFilter chunkFilter
+
+
+</Property>
 		<Property Name="target.WebServer.Enabled" Type="Bool">false</Property>
 		<Property Name="target.WebServer.LogEnabled" Type="Bool">false</Property>
 		<Property Name="target.WebServer.LogPath" Type="Path">/c/ni-rt/system/www/www.log</Property>

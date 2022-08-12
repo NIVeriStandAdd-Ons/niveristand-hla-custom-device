@@ -5,6 +5,7 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="Engine" Type="Folder">
 		<Item Name="Init" Type="Folder">
+			<Item Name="build local designator settings string (MAK).vi" Type="VI" URL="../Init/build local designator settings string (MAK).vi"/>
 			<Item Name="Initialize Engine.vi" Type="VI" URL="../Init/Initialize Engine.vi"/>
 			<Item Name="Initialize HLA helpers.vi" Type="VI" URL="../Init/Initialize HLA helpers.vi"/>
 		</Item>
