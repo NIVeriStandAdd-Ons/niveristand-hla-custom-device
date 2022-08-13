@@ -48,7 +48,7 @@
 		<Item Name="HLA Custom Device Engine.lvlib" Type="Library" URL="../Engine/HLA Custom Device Engine.lvlib"/>
 		<Item Name="HLA Custom Device Shared.lvlib" Type="Library" URL="../Shared/HLA Custom Device Shared.lvlib"/>
 		<Item Name="HLA Custom Device System Explorer.lvlib" Type="Library" URL="../System Explorer/HLA Custom Device System Explorer.lvlib"/>
-		<Item Name="HLA Data Management.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Management.lvlib"/>
+		<Item Name="HLA Data Conversion.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Conversion.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -1158,6 +1158,7 @@ AddOutputFilter chunkFilter
 		</Item>
 		<Item Name="HLA Custom Device Engine.lvlib" Type="Library" URL="../Engine/HLA Custom Device Engine.lvlib"/>
 		<Item Name="HLA Custom Device Shared.lvlib" Type="Library" URL="../Shared/HLA Custom Device Shared.lvlib"/>
+		<Item Name="HLA Data Conversion.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Conversion.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
