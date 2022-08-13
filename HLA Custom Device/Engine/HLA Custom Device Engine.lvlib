@@ -12,9 +12,12 @@
 		</Item>
 		<Item Name="Run" Type="Folder">
 			<Item Name="_subVIs" Type="Folder">
+				<Item Name="build InteractionInfoReceived payload.vi" Type="VI" URL="../_subVIs/build InteractionInfoReceived payload.vi"/>
+				<Item Name="build InteractionParameterReceived payload.vi" Type="VI" URL="../_subVIs/build InteractionParameterReceived payload.vi"/>
 				<Item Name="Check Loop Error.vi" Type="VI" URL="../_subVIs/Check Loop Error.vi"/>
 				<Item Name="Error Handler - Event Handling Loop.vi" Type="VI" URL="../_subVIs/Error Handler - Event Handling Loop.vi"/>
 				<Item Name="Error Handler - Message Handling Loop.vi" Type="VI" URL="../_subVIs/Error Handler - Message Handling Loop.vi"/>
+				<Item Name="get InteractionParameterReceived element by name.vi" Type="VI" URL="../_subVIs/get InteractionParameterReceived element by name.vi"/>
 				<Item Name="Message Queue.lvlib" Type="Library" URL="../_subVIs/MessageQueue/Message Queue.lvlib"/>
 				<Item Name="User Events.lvlib" Type="Library" URL="../_subVIs/UserEvents/User Events.lvlib"/>
 			</Item>
@@ -23,6 +26,9 @@
 		<Item Name="Shut Down" Type="Folder"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
+		<Item Name="AsyncDataSpace.ctl" Type="VI" URL="../AsyncDataSpace.ctl"/>
+		<Item Name="interaction_attribute_received_type.ctl" Type="VI" URL="../interaction_attribute_received_type.ctl"/>
+		<Item Name="interaction_info_received_type.ctl" Type="VI" URL="../interaction_info_received_type.ctl"/>
 		<Item Name="map_attribute_data.ctl" Type="VI" URL="../map_attribute_data.ctl"/>
 		<Item Name="map_object.ctl" Type="VI" URL="../map_object.ctl"/>
 		<Item Name="map_object_data.ctl" Type="VI" URL="../map_object_data.ctl"/>
