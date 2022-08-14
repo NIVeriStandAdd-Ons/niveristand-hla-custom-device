@@ -455,6 +455,7 @@
 			<Item Name="ahs.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/ahs.lvlib"/>
 			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
 			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
+			<Item Name="HLA Data Conversion.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Conversion.lvlib"/>
 			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
@@ -716,6 +717,7 @@ DirectoryIndex index.htm
 			<Item Name="ahs.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/ahs.lvlib"/>
 			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
 			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
+			<Item Name="HLA Data Conversion.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Conversion.lvlib"/>
 			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
@@ -945,6 +947,7 @@ DirectoryIndex index.htm
 			<Item Name="ahs.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/ahs.lvlib"/>
 			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
 			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
+			<Item Name="HLA Data Conversion.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Conversion.lvlib"/>
 			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>

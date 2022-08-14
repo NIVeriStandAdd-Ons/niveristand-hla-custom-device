@@ -11,6 +11,8 @@
 			<Item Name="interaction_parameter_configuration.ctl" Type="VI" URL="../interaction_parameter_configuration.ctl"/>
 			<Item Name="main_page_config.ctl" Type="VI" URL="../main_page_config.ctl"/>
 			<Item Name="object_attribute_configuration.ctl" Type="VI" URL="../object_attribute_configuration.ctl"/>
+			<Item Name="object_managament_config.ctl" Type="VI" URL="../object_managament_config.ctl"/>
+			<Item Name="object_status_info.ctl" Type="VI" URL="../object_status_info.ctl"/>
 		</Item>
 		<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 	</Item>

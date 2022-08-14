@@ -7,6 +7,7 @@
 	<Item Name="Engine" Type="Folder">
 		<Item Name="Init" Type="Folder">
 			<Item Name="build local designator settings string (MAK).vi" Type="VI" URL="../Init/build local designator settings string (MAK).vi"/>
+			<Item Name="Initialization Steps.vi" Type="VI" URL="../Init/Initialization Steps.vi"/>
 			<Item Name="Initialize Engine.vi" Type="VI" URL="../Init/Initialize Engine.vi"/>
 			<Item Name="Initialize HLA helpers.vi" Type="VI" URL="../Init/Initialize HLA helpers.vi"/>
 		</Item>
@@ -29,11 +30,15 @@
 		<Item Name="AsyncDataSpace.ctl" Type="VI" URL="../AsyncDataSpace.ctl"/>
 		<Item Name="interaction_attribute_received_type.ctl" Type="VI" URL="../interaction_attribute_received_type.ctl"/>
 		<Item Name="interaction_info_received_type.ctl" Type="VI" URL="../interaction_info_received_type.ctl"/>
-		<Item Name="map_attribute_data.ctl" Type="VI" URL="../map_attribute_data.ctl"/>
+		<Item Name="map_attr_param_data.ctl" Type="VI" URL="../map_attr_param_data.ctl"/>
 		<Item Name="map_object.ctl" Type="VI" URL="../map_object.ctl"/>
-		<Item Name="map_object_data.ctl" Type="VI" URL="../map_object_data.ctl"/>
+		<Item Name="map_object_value.ctl" Type="VI" URL="../map_object_value.ctl"/>
 		<Item Name="RTinlineRuntimeData.ctl" Type="VI" URL="../RTinlineRuntimeData.ctl"/>
 		<Item Name="RTStateVariables.ctl" Type="VI" URL="../RTStateVariables.ctl"/>
 	</Item>
+	<Item Name="Initialize Interaction Map.vi" Type="VI" URL="../_subVIs/Initialize Interaction Map.vi"/>
+	<Item Name="Initialize Object Map.vi" Type="VI" URL="../_subVIs/Initialize Object Map.vi"/>
+	<Item Name="map_interaction.ctl" Type="VI" URL="../map_interaction.ctl"/>
+	<Item Name="map_interaction_value.ctl" Type="VI" URL="../map_interaction_value.ctl"/>
 	<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 </Library>
