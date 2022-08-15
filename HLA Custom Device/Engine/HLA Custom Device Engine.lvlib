@@ -8,37 +8,46 @@
 		<Item Name="Init" Type="Folder">
 			<Item Name="build local designator settings string (MAK).vi" Type="VI" URL="../Init/build local designator settings string (MAK).vi"/>
 			<Item Name="Initialization Steps.vi" Type="VI" URL="../Init/Initialization Steps.vi"/>
-			<Item Name="Initialize Engine.vi" Type="VI" URL="../Init/Initialize Engine.vi"/>
 			<Item Name="Initialize HLA helpers.vi" Type="VI" URL="../Init/Initialize HLA helpers.vi"/>
+			<Item Name="Initialize Interaction Map.vi" Type="VI" URL="../_subVIs/Initialize Interaction Map.vi"/>
+			<Item Name="Initialize Object Map.vi" Type="VI" URL="../_subVIs/Initialize Object Map.vi"/>
+			<Item Name="Initialize RT Driver.vi" Type="VI" URL="../Init/Initialize RT Driver.vi"/>
 		</Item>
 		<Item Name="Run" Type="Folder">
 			<Item Name="_subVIs" Type="Folder">
-				<Item Name="build InteractionInfoReceived payload.vi" Type="VI" URL="../_subVIs/build InteractionInfoReceived payload.vi"/>
+				<Item Name="Build InteractionInfo payload.vi" Type="VI" URL="../_subVIs/Build InteractionInfo payload.vi"/>
 				<Item Name="build InteractionParameterReceived payload.vi" Type="VI" URL="../_subVIs/build InteractionParameterReceived payload.vi"/>
+				<Item Name="build ObjectInfo payload.vi" Type="VI" URL="../_subVIs/build ObjectInfo payload.vi"/>
 				<Item Name="Check Loop Error.vi" Type="VI" URL="../_subVIs/Check Loop Error.vi"/>
 				<Item Name="Error Handler - Event Handling Loop.vi" Type="VI" URL="../_subVIs/Error Handler - Event Handling Loop.vi"/>
 				<Item Name="Error Handler - Message Handling Loop.vi" Type="VI" URL="../_subVIs/Error Handler - Message Handling Loop.vi"/>
 				<Item Name="get InteractionParameterReceived element by name.vi" Type="VI" URL="../_subVIs/get InteractionParameterReceived element by name.vi"/>
 				<Item Name="Message Queue.lvlib" Type="Library" URL="../_subVIs/MessageQueue/Message Queue.lvlib"/>
+				<Item Name="Update VS channels (interaction data).vi" Type="VI" URL="../Update VS channels (interaction data).vi"/>
+				<Item Name="Update VS channels (interaction info).vi" Type="VI" URL="../Update VS channels (interaction info).vi"/>
 				<Item Name="User Events.lvlib" Type="Library" URL="../_subVIs/UserEvents/User Events.lvlib"/>
 			</Item>
 			<Item Name="HLA Custom Device.Async.vi" Type="VI" URL="../HLA Custom Device.Async.vi"/>
 		</Item>
-		<Item Name="Shut Down" Type="Folder"/>
+		<Item Name="Shut Down" Type="Folder">
+			<Item Name="Shut Down RT Driver.vi" Type="VI" URL="../Shut Down RT Driver.vi"/>
+		</Item>
 	</Item>
 	<Item Name="Types" Type="Folder">
 		<Item Name="AsyncDataSpace.ctl" Type="VI" URL="../AsyncDataSpace.ctl"/>
+		<Item Name="dataElement_type.ctl" Type="VI" URL="../dataElement_type.ctl"/>
 		<Item Name="interaction_attribute_received_type.ctl" Type="VI" URL="../interaction_attribute_received_type.ctl"/>
 		<Item Name="interaction_info_received_type.ctl" Type="VI" URL="../interaction_info_received_type.ctl"/>
 		<Item Name="map_attr_param_data.ctl" Type="VI" URL="../map_attr_param_data.ctl"/>
+		<Item Name="map_interaction.ctl" Type="VI" URL="../map_interaction.ctl"/>
+		<Item Name="map_interaction_value.ctl" Type="VI" URL="../map_interaction_value.ctl"/>
 		<Item Name="map_object.ctl" Type="VI" URL="../map_object.ctl"/>
 		<Item Name="map_object_value.ctl" Type="VI" URL="../map_object_value.ctl"/>
-		<Item Name="RTinlineRuntimeData.ctl" Type="VI" URL="../RTinlineRuntimeData.ctl"/>
+		<Item Name="object_info_received_type.ctl" Type="VI" URL="../object_info_received_type.ctl"/>
+		<Item Name="receiveInteraction_type.ctl" Type="VI" URL="../receiveInteraction_type.ctl"/>
+		<Item Name="reflectAttributeValues_type.ctl" Type="VI" URL="../reflectAttributeValues_type.ctl"/>
+		<Item Name="RTruntimeData.ctl" Type="VI" URL="../RTruntimeData.ctl"/>
 		<Item Name="RTStateVariables.ctl" Type="VI" URL="../RTStateVariables.ctl"/>
 	</Item>
-	<Item Name="Initialize Interaction Map.vi" Type="VI" URL="../_subVIs/Initialize Interaction Map.vi"/>
-	<Item Name="Initialize Object Map.vi" Type="VI" URL="../_subVIs/Initialize Object Map.vi"/>
-	<Item Name="map_interaction.ctl" Type="VI" URL="../map_interaction.ctl"/>
-	<Item Name="map_interaction_value.ctl" Type="VI" URL="../map_interaction_value.ctl"/>
 	<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 </Library>
