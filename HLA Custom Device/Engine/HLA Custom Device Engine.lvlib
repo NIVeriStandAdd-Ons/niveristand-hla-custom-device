@@ -14,22 +14,26 @@
 		</Item>
 		<Item Name="Run" Type="Folder">
 			<Item Name="_subVIs" Type="Folder">
-				<Item Name="Build InteractionInfo payload.vi" Type="VI" URL="../_subVIs/Build InteractionInfo payload.vi"/>
-				<Item Name="build InteractionParameterReceived payload.vi" Type="VI" URL="../_subVIs/build InteractionParameterReceived payload.vi"/>
-				<Item Name="build map_object_key.vi" Type="VI" URL="../build map_object_key.vi"/>
-				<Item Name="build Object Information payload.vi" Type="VI" URL="../_subVIs/build Object Information payload.vi"/>
+				<Item Name="helpers" Type="Folder">
+					<Item Name="Message Queue.lvlib" Type="Library" URL="../_subVIs/MessageQueue/Message Queue.lvlib"/>
+					<Item Name="User Events.lvlib" Type="Library" URL="../_subVIs/UserEvents/User Events.lvlib"/>
+				</Item>
+				<Item Name="ObjectManagement" Type="Folder">
+					<Item Name="Build InteractionInfo payload.vi" Type="VI" URL="../_subVIs/Build InteractionInfo payload.vi"/>
+					<Item Name="build InteractionParameterReceived payload.vi" Type="VI" URL="../_subVIs/build InteractionParameterReceived payload.vi"/>
+					<Item Name="build map_object_key.vi" Type="VI" URL="../build map_object_key.vi"/>
+					<Item Name="build Object Information payload.vi" Type="VI" URL="../_subVIs/build Object Information payload.vi"/>
+					<Item Name="get Interaction Information element by name.vi" Type="VI" URL="../_subVIs/get Interaction Information element by name.vi"/>
+					<Item Name="get Object Information element by name.vi" Type="VI" URL="../_subVIs/get Object Information element by name.vi"/>
+					<Item Name="Register Discovered Object Instance (incoming).vi" Type="VI" URL="../Register Discovered Object Instance (incoming).vi"/>
+					<Item Name="Update VS channels (interaction data).vi" Type="VI" URL="../Update VS channels (interaction data).vi"/>
+					<Item Name="Update VS channels (interaction info).vi" Type="VI" URL="../Update VS channels (interaction info).vi"/>
+					<Item Name="Update VS channels (object data).vi" Type="VI" URL="../Update VS channels (object data).vi"/>
+					<Item Name="Update VS channels (object info).vi" Type="VI" URL="../Update VS channels (object info).vi"/>
+				</Item>
 				<Item Name="Check Loop Error.vi" Type="VI" URL="../_subVIs/Check Loop Error.vi"/>
 				<Item Name="Error Handler - Event Handling Loop.vi" Type="VI" URL="../_subVIs/Error Handler - Event Handling Loop.vi"/>
 				<Item Name="Error Handler - Message Handling Loop.vi" Type="VI" URL="../_subVIs/Error Handler - Message Handling Loop.vi"/>
-				<Item Name="get Interaction Information element by name.vi" Type="VI" URL="../_subVIs/get Interaction Information element by name.vi"/>
-				<Item Name="get Object Information element by name.vi" Type="VI" URL="../_subVIs/get Object Information element by name.vi"/>
-				<Item Name="InstanceID manager.vi" Type="VI" URL="../InstanceID manager.vi"/>
-				<Item Name="Message Queue.lvlib" Type="Library" URL="../_subVIs/MessageQueue/Message Queue.lvlib"/>
-				<Item Name="Update VS channels (interaction data).vi" Type="VI" URL="../Update VS channels (interaction data).vi"/>
-				<Item Name="Update VS channels (interaction info).vi" Type="VI" URL="../Update VS channels (interaction info).vi"/>
-				<Item Name="Update VS channels (object data).vi" Type="VI" URL="../Update VS channels (object data).vi"/>
-				<Item Name="Update VS channels (object info).vi" Type="VI" URL="../Update VS channels (object info).vi"/>
-				<Item Name="User Events.lvlib" Type="Library" URL="../_subVIs/UserEvents/User Events.lvlib"/>
 			</Item>
 			<Item Name="HLA Custom Device.Async.vi" Type="VI" URL="../HLA Custom Device.Async.vi"/>
 		</Item>

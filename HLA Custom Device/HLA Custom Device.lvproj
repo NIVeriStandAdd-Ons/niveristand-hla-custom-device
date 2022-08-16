@@ -49,6 +49,7 @@
 		<Item Name="HLA Custom Device Shared.lvlib" Type="Library" URL="../Shared/HLA Custom Device Shared.lvlib"/>
 		<Item Name="HLA Custom Device System Explorer.lvlib" Type="Library" URL="../System Explorer/HLA Custom Device System Explorer.lvlib"/>
 		<Item Name="HLA Data Conversion.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Conversion.lvlib"/>
+		<Item Name="inline_vs_group_refs.ctl" Type="VI" URL="../Shared/inline_vs_group_refs.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -142,7 +143,6 @@
 			<Item Name="ahvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/ahvm.lvlib"/>
 			<Item Name="phvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/phvm.lvlib"/>
 			<Item Name="ahs.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/ahs.lvlib"/>
-			<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../Engine/RThlaMapHelpers.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Debug" Type="Source Distribution">
@@ -457,6 +457,7 @@
 			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
 			<Item Name="HLA Data Conversion.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Conversion.lvlib"/>
 			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
+			<Item Name="interaction_attribute_received_type.ctl" Type="VI" URL="../Engine/interaction_attribute_received_type.ctl"/>
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
@@ -469,7 +470,6 @@
 			<Item Name="ObjManager.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/ObjectManagement/ObjManager.lvlib"/>
 			<Item Name="openrti_rti1516eLv.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/library/openrti_rti1516eLv.lvlib"/>
 			<Item Name="phvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/phvm.lvlib"/>
-			<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../Engine/RThlaMapHelpers.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -719,6 +719,7 @@ DirectoryIndex index.htm
 			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
 			<Item Name="HLA Data Conversion.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Conversion.lvlib"/>
 			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
+			<Item Name="interaction_attribute_received_type.ctl" Type="VI" URL="../Engine/interaction_attribute_received_type.ctl"/>
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
@@ -731,7 +732,6 @@ DirectoryIndex index.htm
 			<Item Name="ObjManager.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/ObjectManagement/ObjManager.lvlib"/>
 			<Item Name="openrti_rti1516eLv.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/library/openrti_rti1516eLv.lvlib"/>
 			<Item Name="phvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/phvm.lvlib"/>
-			<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../Engine/RThlaMapHelpers.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -949,6 +949,7 @@ DirectoryIndex index.htm
 			<Item Name="app_data.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/apps/generic/_typedefs/app_data.ctl"/>
 			<Item Name="HLA Data Conversion.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Conversion.lvlib"/>
 			<Item Name="hla_vendor_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/hla_vendor_type.ctl"/>
+			<Item Name="interaction_attribute_received_type.ctl" Type="VI" URL="../Engine/interaction_attribute_received_type.ctl"/>
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
@@ -961,7 +962,6 @@ DirectoryIndex index.htm
 			<Item Name="ObjManager.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/ObjectManagement/ObjManager.lvlib"/>
 			<Item Name="openrti_rti1516eLv.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/library/openrti_rti1516eLv.lvlib"/>
 			<Item Name="phvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/phvm.lvlib"/>
-			<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../Engine/RThlaMapHelpers.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -1221,7 +1221,6 @@ AddOutputFilter chunkFilter
 			<Item Name="ObjManager.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/ObjectManagement/ObjManager.lvlib"/>
 			<Item Name="openrti_rti1516eLv.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/library/openrti_rti1516eLv.lvlib"/>
 			<Item Name="phvm.lvlib" Type="Library" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/phvm.lvlib"/>
-			<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../Engine/RThlaMapHelpers.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
