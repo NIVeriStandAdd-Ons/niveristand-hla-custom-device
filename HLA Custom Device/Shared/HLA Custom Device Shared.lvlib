@@ -7,6 +7,7 @@
 		<Item Name="Types" Type="Folder">
 			<Item Name="Compiled.Settings.ctl" Type="VI" URL="../Compiled.Settings.ctl"/>
 			<Item Name="info_channel_configuration.ctl" Type="VI" URL="../info_channel_configuration.ctl"/>
+			<Item Name="inline_vs_group_refs.ctl" Type="VI" URL="../inline_vs_group_refs.ctl"/>
 			<Item Name="interaction_parameter_configuration.ctl" Type="VI" URL="../interaction_parameter_configuration.ctl"/>
 			<Item Name="main_page_config.ctl" Type="VI" URL="../main_page_config.ctl"/>
 			<Item Name="object_attribute_configuration.ctl" Type="VI" URL="../object_attribute_configuration.ctl"/>

@@ -58,6 +58,9 @@
 			<Item Name="Retrieve Async Section configuration properties (interactions).vi" Type="VI" URL="../Retrieve Async Section configuration properties (interactions).vi"/>
 			<Item Name="Retrieve Async Section configuration properties (objects).vi" Type="VI" URL="../Retrieve Async Section configuration properties (objects).vi"/>
 			<Item Name="Retrieve Async Section group reference.vi" Type="VI" URL="../Retrieve Async Section group reference.vi"/>
+			<Item Name="Retrieve Block Data Refs from item refs (outgoing).vi" Type="VI" URL="../Retrieve Block Data Refs from item refs (outgoing).vi"/>
+			<Item Name="Retrieve CD dependencies from properties.vi" Type="VI" URL="../Retrieve CD dependencies from properties.vi"/>
+			<Item Name="Retrieve Inline Section configuration properties (interactions).vi" Type="VI" URL="../Retrieve Inline Section configuration properties (interactions).vi"/>
 		</Item>
 	</Item>
 </Library>
