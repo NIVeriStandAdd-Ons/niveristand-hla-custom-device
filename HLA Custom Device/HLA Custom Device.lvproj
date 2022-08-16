@@ -1079,7 +1079,7 @@ DirectoryIndex index.htm
 	<Item Name="RT CompactRIO Target - Linux x64" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">RT CompactRIO Target - Linux x64</Property>
 		<Property Name="alias.value" Type="Str">192.168.0.27</Property>
-		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;DeviceCode,7735;CD_MOCKUP,False;TARGET_TYPE,RT;</Property>
+		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;DeviceCode,7735;CD_MOCKUP,False;DEBUG,True;TARGET_TYPE,RT;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">7735</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
