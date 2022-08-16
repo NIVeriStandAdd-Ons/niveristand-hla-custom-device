@@ -45,6 +45,7 @@
 			<Item Name="Initialize System Definition Tree.vi" Type="VI" URL="../Scripting/Initialize System Definition Tree.vi"/>
 			<Item Name="Update sysdef tree with fom info.vi" Type="VI" URL="../Scripting/Update sysdef tree with fom info.vi"/>
 			<Item Name="Get main page properties.vi" Type="VI" URL="../Get main page properties.vi"/>
+			<Item Name="Get Object Properties.vi" Type="VI" URL="../Scripting/Get Object Properties.vi"/>
 			<Item Name="remove fom info from sysdef tree.vi" Type="VI" URL="../Scripting/remove fom info from sysdef tree.vi"/>
 			<Item Name="Create Interaction.vi" Type="VI" URL="../Scripting/Create Interaction.vi"/>
 			<Item Name="Create Object.vi" Type="VI" URL="../Scripting/Create Object.vi"/>
@@ -58,4 +59,5 @@
 			<Item Name="Retrieve Async Section group reference.vi" Type="VI" URL="../Retrieve Async Section group reference.vi"/>
 		</Item>
 	</Item>
+	<Item Name="Get Interaction Properties.vi" Type="VI" URL="../Scripting/Get Interaction Properties.vi"/>
 </Library>
