@@ -40,8 +40,10 @@
 			</Item>
 			<Item Name="newSubVI.vit" Type="VI" URL="../newSubVI.vit"/>
 			<Item Name="Create Status Channels.vi" Type="VI" URL="../Scripting/Create Status Channels.vi"/>
-			<Item Name="Create Interaction information channels.vi" Type="VI" URL="../Scripting/Create Interaction information channels.vi"/>
-			<Item Name="Create Object information channels.vi" Type="VI" URL="../Scripting/Create Object information channels.vi"/>
+			<Item Name="Create Interaction information channels (outgoing).vi" Type="VI" URL="../Scripting/Create Interaction information channels (outgoing).vi"/>
+			<Item Name="Create Object information channels (outgoing).vi" Type="VI" URL="../Scripting/Create Object information channels (outgoing).vi"/>
+			<Item Name="Create Interaction information channels (incoming).vi" Type="VI" URL="../Scripting/Create Interaction information channels (incoming).vi"/>
+			<Item Name="Create Object information channels (incoming).vi" Type="VI" URL="../Scripting/Create Object information channels (incoming).vi"/>
 			<Item Name="Initialize System Definition Tree.vi" Type="VI" URL="../Scripting/Initialize System Definition Tree.vi"/>
 			<Item Name="Update sysdef tree with fom info.vi" Type="VI" URL="../Scripting/Update sysdef tree with fom info.vi"/>
 			<Item Name="Get main page properties.vi" Type="VI" URL="../Get main page properties.vi"/>
@@ -61,7 +63,7 @@
 			<Item Name="Retrieve Block Data Refs from item refs (outgoing).vi" Type="VI" URL="../Retrieve Block Data Refs from item refs (outgoing).vi"/>
 			<Item Name="Retrieve CD dependencies from properties.vi" Type="VI" URL="../Retrieve CD dependencies from properties.vi"/>
 			<Item Name="Retrieve Inline Section configuration properties (interactions).vi" Type="VI" URL="../Retrieve Inline Section configuration properties (interactions).vi"/>
+			<Item Name="Retrieve Inline Section configuration properties (objects).vi" Type="VI" URL="../Retrieve Inline Section configuration properties (objects).vi"/>
 		</Item>
 	</Item>
-	<Item Name="Retrieve Inline Section configuration properties (objects).vi" Type="VI" URL="../Retrieve Inline Section configuration properties (objects).vi"/>
 </Library>
