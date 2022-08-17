@@ -63,4 +63,5 @@
 			<Item Name="Retrieve Inline Section configuration properties (interactions).vi" Type="VI" URL="../Retrieve Inline Section configuration properties (interactions).vi"/>
 		</Item>
 	</Item>
+	<Item Name="Retrieve Inline Section configuration properties (objects).vi" Type="VI" URL="../Retrieve Inline Section configuration properties (objects).vi"/>
 </Library>
