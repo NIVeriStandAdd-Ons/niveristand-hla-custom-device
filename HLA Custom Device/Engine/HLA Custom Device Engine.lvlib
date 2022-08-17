@@ -24,6 +24,7 @@
 					<Item Name="build InteractionParameterReceived payload.vi" Type="VI" URL="../_subVIs/build InteractionParameterReceived payload.vi"/>
 					<Item Name="build map_object_key.vi" Type="VI" URL="../_subVIs/build map_object_key.vi"/>
 					<Item Name="build Object Information payload.vi" Type="VI" URL="../_subVIs/build Object Information payload.vi"/>
+					<Item Name="build unique object Insance name.vi" Type="VI" URL="../_subVIs/build unique object Insance name.vi"/>
 					<Item Name="get Interaction Information element by name.vi" Type="VI" URL="../_subVIs/get Interaction Information element by name.vi"/>
 					<Item Name="get Object Information element by name.vi" Type="VI" URL="../_subVIs/get Object Information element by name.vi"/>
 					<Item Name="Register Discovered Object Instance (incoming).vi" Type="VI" URL="../_subVIs/Register Discovered Object Instance (incoming).vi"/>
@@ -38,6 +39,7 @@
 			</Item>
 			<Item Name="HLA Custom Device.Async.vi" Type="VI" URL="../HLA Custom Device.Async.vi"/>
 			<Item Name="Inline Write (Interactions).vi" Type="VI" URL="../Inline Write (Interactions).vi"/>
+			<Item Name="Inline Write (Objects).vi" Type="VI" URL="../Inline Write (Objects).vi"/>
 		</Item>
 		<Item Name="Shut Down" Type="Folder">
 			<Item Name="Shut Down RT Driver.vi" Type="VI" URL="../Shut Down RT Driver.vi"/>
@@ -65,7 +67,10 @@
 		<Item Name="RTStateVariables.ctl" Type="VI" URL="../RTStateVariables.ctl"/>
 		<Item Name="map_object_key.ctl" Type="VI" URL="../_typedefs/map_object_key.ctl"/>
 		<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../_typedefs/RThlaMapHelpers.ctl"/>
-		<Item Name="map_out_vs_ch_interaction.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_interaction.ctl"/>
+		<Item Name="map_out_vs_ch_objects_value.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_objects_value.ctl"/>
+		<Item Name="map_out_vs_ch_instanceId.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_instanceId.ctl"/>
+		<Item Name="map_out_vs_ch_objects.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_objects.ctl"/>
+		<Item Name="map_out_vs_ch_interactIonClass.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_interactIonClass.ctl"/>
 	</Item>
 	<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 </Library>
