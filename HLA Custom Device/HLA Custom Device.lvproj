@@ -49,7 +49,6 @@
 		<Item Name="HLA Custom Device Shared.lvlib" Type="Library" URL="../Shared/HLA Custom Device Shared.lvlib"/>
 		<Item Name="HLA Custom Device System Explorer.lvlib" Type="Library" URL="../System Explorer/HLA Custom Device System Explorer.lvlib"/>
 		<Item Name="HLA Data Conversion.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Conversion.lvlib"/>
-		<Item Name="map_out_vs_ch_interaction.ctl" Type="VI" URL="../Engine/_typedefs/map_out_vs_ch_interaction.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -460,7 +459,6 @@
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="map_out_vs_ch_interaction.ctl" Type="VI" URL="../Engine/_typedefs/map_out_vs_ch_interaction.ctl"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -722,7 +720,6 @@ DirectoryIndex index.htm
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="map_out_vs_ch_interaction.ctl" Type="VI" URL="../Engine/_typedefs/map_out_vs_ch_interaction.ctl"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -952,7 +949,6 @@ DirectoryIndex index.htm
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="map_out_vs_ch_interaction.ctl" Type="VI" URL="../Engine/_typedefs/map_out_vs_ch_interaction.ctl"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -1212,7 +1208,6 @@ AddOutputFilter chunkFilter
 			<Item Name="interaction_map_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_map_type.ctl"/>
 			<Item Name="interaction_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Dictionaries/_typedefs/interaction_type.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="map_out_vs_ch_interaction.ctl" Type="VI" URL="../Engine/_typedefs/map_out_vs_ch_interaction.ctl"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>

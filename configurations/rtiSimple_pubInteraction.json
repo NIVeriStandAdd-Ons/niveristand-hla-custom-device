@@ -1,18 +1,7 @@
 {
   "publish":
   {
-    "objects": [
-      {
-        "name": "BaseEntity",
-        "attributes": [
-          {
-            "name": "WorldLocation",
-            "type": "String"
-          }
-        ],
-        "instanceId": 0
-      }
-    ],
+    "objects": [],
     "interactions": [
       {
         "name": "WeaponFire",

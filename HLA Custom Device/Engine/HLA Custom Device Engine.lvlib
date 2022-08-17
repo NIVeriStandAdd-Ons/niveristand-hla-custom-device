@@ -9,6 +9,7 @@
 			<Item Name="Get list of FOM initialization steps.vi" Type="VI" URL="../Init/Get list of FOM initialization steps.vi"/>
 			<Item Name="Initialize HLA helpers.vi" Type="VI" URL="../Init/Initialize HLA helpers.vi"/>
 			<Item Name="Initialize Interaction Map (incoming).vi" Type="VI" URL="../Init/Initialize Interaction Map (incoming).vi"/>
+			<Item Name="Initialize Interaction Map (outgoing).vi" Type="VI" URL="../Init/Initialize Interaction Map (outgoing).vi"/>
 			<Item Name="Initialize Object Map.vi" Type="VI" URL="../Init/Initialize Object Map.vi"/>
 			<Item Name="Initialize RT Driver.vi" Type="VI" URL="../Init/Initialize RT Driver.vi"/>
 		</Item>
@@ -64,7 +65,7 @@
 		<Item Name="RTStateVariables.ctl" Type="VI" URL="../RTStateVariables.ctl"/>
 		<Item Name="map_object_key.ctl" Type="VI" URL="../_typedefs/map_object_key.ctl"/>
 		<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../_typedefs/RThlaMapHelpers.ctl"/>
+		<Item Name="map_out_vs_ch_interaction.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_interaction.ctl"/>
 	</Item>
-	<Item Name="Initialize Interaction Map (outgoing).vi" Type="VI" URL="../Init/Initialize Interaction Map (outgoing).vi"/>
 	<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 </Library>
