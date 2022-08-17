@@ -16,6 +16,9 @@
 *.lvlps
 .cache/
 
+Built/
+
+#others
 GNUmakefile
 Makefile
 CMakeCache.txt
@@ -31,4 +34,4 @@ build/~
 *obj/
 *bin/
 *package_src/
-Built/*
+*Built/*
