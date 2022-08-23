@@ -74,7 +74,7 @@
 (setqb RTI_udpPort 4001)
 (setqb RTI_tcpPort 4001)
 (setqb RTI_destAddrString "229.7.7.7")
-(setqb RTI_tcpForwarderAddr "192.168.0.11")
+(setqb RTI_tcpForwarderAddr "10.96.1.12")
 
   ;; TCP Forwarder Configuration
 (setqb RTI_distributedForwarderPort 5000)

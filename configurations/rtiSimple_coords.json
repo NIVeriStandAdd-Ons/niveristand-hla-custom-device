@@ -1,0 +1,62 @@
+{
+  "publish":
+  {
+    "objects": [
+      {
+        "name": "Aircraft",
+        "attributes": [
+          {
+            "name": "Coordinates",
+            "type": "fixed_coords"
+          }
+        ],
+        "instanceId": 0
+      }
+    ],
+    "interactions": [
+      {
+        "name": "WeaponFire",
+        "parameters": [
+          {
+            "name": "FuseType",
+            "type": "c"
+          },
+          {
+            "name": "RateOfFire",
+            "type": "e"
+          }
+        ]
+      }
+    ]
+  },
+  "subscribe":
+  {
+    "objects": [
+      {
+        "name": "Aircraft",
+        "attributes": [
+          {
+            "name": "Coordinates",
+            "type": "fixed_coords"
+          }
+        ],
+        "instanceId": 0
+      }
+    ],
+    "interactions": [
+      {
+        "name": "WeaponFire",
+        "parameters": [
+          {
+            "name": "FuseType",
+            "type": "c"
+          },
+          {
+            "name": "RateOfFire",
+            "type": "e"
+          }
+        ]
+      }
+    ]
+  }
+}

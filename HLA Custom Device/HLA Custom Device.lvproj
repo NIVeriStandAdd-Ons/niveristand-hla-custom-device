@@ -404,6 +404,9 @@
 		<Item Name="HLA Custom Device Shared.lvlib" Type="Library" URL="../Shared/HLA Custom Device Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Add Error Information.vi" Type="VI" URL="/&lt;vilib&gt;/addons/hla/Add Error Information.vi"/>
+				<Item Name="ahs.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/hla/helpers/ahs.lvlib"/>
+				<Item Name="ahvm.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/hla/helpers/ahvm.lvlib"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -424,6 +427,7 @@
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="hla_vendor_type.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/hla/hla_vendor_type.ctl"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
@@ -432,6 +436,8 @@
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Data/NIVeriStand_DataServices.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="openrti_rti1516eLv.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/hla/openrti_rti1516eLv.lvlib"/>
+				<Item Name="phvm.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/hla/helpers/phvm.lvlib"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
@@ -443,59 +449,14 @@
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="connect.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/connect.vi"/>
-			<Item Name="Create Attribute Handle Set.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/Create Attribute Handle Set.vi"/>
-			<Item Name="Create Attribute Handle Value Map.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Create Attribute Handle Value Map.vi"/>
-			<Item Name="create Federation Execution.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/create Federation Execution.vi"/>
-			<Item Name="Create Parameter Handle Value Map.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Create Parameter Handle Value Map.vi"/>
-			<Item Name="create RTI ambassador (MAK).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/create RTI ambassador (MAK).vi"/>
-			<Item Name="Destroy Attribute Handle Set.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/Destroy Attribute Handle Set.vi"/>
-			<Item Name="Destroy Attribute Handle Value Map.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Destroy Attribute Handle Value Map.vi"/>
-			<Item Name="destroy Federation Execution.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/destroy Federation Execution.vi"/>
-			<Item Name="Destroy Parameter Handle Value Map.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Destroy Parameter Handle Value Map.vi"/>
-			<Item Name="destroy RTI ambassador.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/destroy RTI ambassador.vi"/>
-			<Item Name="disconnect.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/disconnect.vi"/>
-			<Item Name="discoverObjectInstanceEvent_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/discoverObjectInstanceEvent_type.ctl"/>
-			<Item Name="Get Attribute (Raw).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Get Attribute (Raw).vi"/>
-			<Item Name="Get Attribute Handle by Index.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Get Attribute Handle by Index.vi"/>
-			<Item Name="get Attribute Handle.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/get Attribute Handle.vi"/>
-			<Item Name="get Interaction Class Handle.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/get Interaction Class Handle.vi"/>
-			<Item Name="get Object Class Handle.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/get Object Class Handle.vi"/>
-			<Item Name="Get Parameter (Raw).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Get Parameter (Raw).vi"/>
-			<Item Name="Get Parameter Handle by Index.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Get Parameter Handle by Index.vi"/>
-			<Item Name="get Parameter Handle.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/get Parameter Handle.vi"/>
 			<Item Name="HLA Data Conversion.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Conversion.lvlib"/>
-			<Item Name="hla_vendor_type.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/hla/hla_vendor_type.ctl"/>
-			<Item Name="Insert Element to Attribute Handle Set.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/Insert Element to Attribute Handle Set.vi"/>
-			<Item Name="join Federation Execution.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/join Federation Execution.vi"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="objectInstance Cluster to String.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/helpers/objectInstance Cluster to String.vi"/>
-			<Item Name="OrderType.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/OrderType.ctl"/>
-			<Item Name="publish Interaction Class.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/publish Interaction Class.vi"/>
-			<Item Name="publish Object Class Attributes.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/publish Object Class Attributes.vi"/>
-			<Item Name="receiveInteractionEvent_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/receiveInteractionEvent_type.ctl"/>
-			<Item Name="reflectAttributeValuesEvent_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/reflectAttributeValuesEvent_type.ctl"/>
-			<Item Name="register Callbacks.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/register Callbacks.vi"/>
-			<Item Name="register Object Instance.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/register Object Instance.vi"/>
-			<Item Name="removeObjectInstanceEvent_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/removeObjectInstanceEvent_type.ctl"/>
-			<Item Name="reserve Object Instance Name.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/reserve Object Instance Name.vi"/>
-			<Item Name="resign Federation Execution.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/resign Federation Execution.vi"/>
-			<Item Name="ResignAction.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/ResignAction.ctl"/>
-			<Item Name="Send Interaction.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/Send Interaction.vi"/>
-			<Item Name="Set Attribute (Raw).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Set Attribute (Raw).vi"/>
-			<Item Name="Set Parameter (Raw).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Set Parameter (Raw).vi"/>
-			<Item Name="start RTI ambassador.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/start RTI ambassador.vi"/>
-			<Item Name="stop RTI ambassador.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/stop RTI ambassador.vi"/>
-			<Item Name="subscribe Interaction Class.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/subscribe Interaction Class.vi"/>
-			<Item Name="subscribe Object Class Attributes.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/subscribe Object Class Attributes.vi"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="TransportationType.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/TransportationType.ctl"/>
-			<Item Name="update Attribute Values.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/update Attribute Values.vi"/>
 			<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../_Debug/VsDebugLibrary.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -697,6 +658,9 @@ DirectoryIndex index.htm
 		<Item Name="HLA Custom Device Shared.lvlib" Type="Library" URL="../Shared/HLA Custom Device Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Add Error Information.vi" Type="VI" URL="/&lt;vilib&gt;/addons/hla/Add Error Information.vi"/>
+				<Item Name="ahs.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/hla/helpers/ahs.lvlib"/>
+				<Item Name="ahvm.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/hla/helpers/ahvm.lvlib"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -717,6 +681,7 @@ DirectoryIndex index.htm
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="hla_vendor_type.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/hla/hla_vendor_type.ctl"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
@@ -725,6 +690,8 @@ DirectoryIndex index.htm
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Data/NIVeriStand_DataServices.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="openrti_rti1516eLv.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/hla/openrti_rti1516eLv.lvlib"/>
+				<Item Name="phvm.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/hla/helpers/phvm.lvlib"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
@@ -736,59 +703,14 @@ DirectoryIndex index.htm
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="connect.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/connect.vi"/>
-			<Item Name="Create Attribute Handle Set.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/Create Attribute Handle Set.vi"/>
-			<Item Name="Create Attribute Handle Value Map.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Create Attribute Handle Value Map.vi"/>
-			<Item Name="create Federation Execution.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/create Federation Execution.vi"/>
-			<Item Name="Create Parameter Handle Value Map.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Create Parameter Handle Value Map.vi"/>
-			<Item Name="create RTI ambassador (MAK).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/create RTI ambassador (MAK).vi"/>
-			<Item Name="Destroy Attribute Handle Set.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/Destroy Attribute Handle Set.vi"/>
-			<Item Name="Destroy Attribute Handle Value Map.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Destroy Attribute Handle Value Map.vi"/>
-			<Item Name="destroy Federation Execution.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/destroy Federation Execution.vi"/>
-			<Item Name="Destroy Parameter Handle Value Map.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Destroy Parameter Handle Value Map.vi"/>
-			<Item Name="destroy RTI ambassador.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/destroy RTI ambassador.vi"/>
-			<Item Name="disconnect.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/disconnect.vi"/>
-			<Item Name="discoverObjectInstanceEvent_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/discoverObjectInstanceEvent_type.ctl"/>
-			<Item Name="Get Attribute (Raw).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Get Attribute (Raw).vi"/>
-			<Item Name="Get Attribute Handle by Index.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Get Attribute Handle by Index.vi"/>
-			<Item Name="get Attribute Handle.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/get Attribute Handle.vi"/>
-			<Item Name="get Interaction Class Handle.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/get Interaction Class Handle.vi"/>
-			<Item Name="get Object Class Handle.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/get Object Class Handle.vi"/>
-			<Item Name="Get Parameter (Raw).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Get Parameter (Raw).vi"/>
-			<Item Name="Get Parameter Handle by Index.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Get Parameter Handle by Index.vi"/>
-			<Item Name="get Parameter Handle.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/get Parameter Handle.vi"/>
 			<Item Name="HLA Data Conversion.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Conversion.lvlib"/>
-			<Item Name="hla_vendor_type.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/hla/hla_vendor_type.ctl"/>
-			<Item Name="Insert Element to Attribute Handle Set.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/Insert Element to Attribute Handle Set.vi"/>
-			<Item Name="join Federation Execution.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/join Federation Execution.vi"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="objectInstance Cluster to String.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/helpers/objectInstance Cluster to String.vi"/>
-			<Item Name="OrderType.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/OrderType.ctl"/>
-			<Item Name="publish Interaction Class.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/publish Interaction Class.vi"/>
-			<Item Name="publish Object Class Attributes.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/publish Object Class Attributes.vi"/>
-			<Item Name="receiveInteractionEvent_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/receiveInteractionEvent_type.ctl"/>
-			<Item Name="reflectAttributeValuesEvent_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/reflectAttributeValuesEvent_type.ctl"/>
-			<Item Name="register Callbacks.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/register Callbacks.vi"/>
-			<Item Name="register Object Instance.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/register Object Instance.vi"/>
-			<Item Name="removeObjectInstanceEvent_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/removeObjectInstanceEvent_type.ctl"/>
-			<Item Name="reserve Object Instance Name.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/reserve Object Instance Name.vi"/>
-			<Item Name="resign Federation Execution.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/resign Federation Execution.vi"/>
-			<Item Name="ResignAction.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/ResignAction.ctl"/>
-			<Item Name="Send Interaction.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/Send Interaction.vi"/>
-			<Item Name="Set Attribute (Raw).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Set Attribute (Raw).vi"/>
-			<Item Name="Set Parameter (Raw).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Set Parameter (Raw).vi"/>
-			<Item Name="start RTI ambassador.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/start RTI ambassador.vi"/>
-			<Item Name="stop RTI ambassador.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/stop RTI ambassador.vi"/>
-			<Item Name="subscribe Interaction Class.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/subscribe Interaction Class.vi"/>
-			<Item Name="subscribe Object Class Attributes.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/subscribe Object Class Attributes.vi"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="TransportationType.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/TransportationType.ctl"/>
-			<Item Name="update Attribute Values.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/update Attribute Values.vi"/>
 			<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../_Debug/VsDebugLibrary.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -957,6 +879,9 @@ DirectoryIndex index.htm
 		<Item Name="HLA Custom Device Shared.lvlib" Type="Library" URL="../Shared/HLA Custom Device Shared.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Add Error Information.vi" Type="VI" URL="/&lt;vilib&gt;/addons/hla/Add Error Information.vi"/>
+				<Item Name="ahs.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/hla/helpers/ahs.lvlib"/>
+				<Item Name="ahvm.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/hla/helpers/ahvm.lvlib"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
@@ -978,6 +903,7 @@ DirectoryIndex index.htm
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="hla_vendor_type.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/hla/hla_vendor_type.ctl"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
@@ -986,6 +912,8 @@ DirectoryIndex index.htm
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Data/NIVeriStand_DataServices.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="openrti_rti1516eLv.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/hla/openrti_rti1516eLv.lvlib"/>
+				<Item Name="phvm.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/hla/helpers/phvm.lvlib"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
@@ -997,59 +925,14 @@ DirectoryIndex index.htm
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="connect.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/connect.vi"/>
-			<Item Name="Create Attribute Handle Set.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/Create Attribute Handle Set.vi"/>
-			<Item Name="Create Attribute Handle Value Map.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Create Attribute Handle Value Map.vi"/>
-			<Item Name="create Federation Execution.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/create Federation Execution.vi"/>
-			<Item Name="Create Parameter Handle Value Map.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Create Parameter Handle Value Map.vi"/>
-			<Item Name="create RTI ambassador (MAK).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/create RTI ambassador (MAK).vi"/>
-			<Item Name="Destroy Attribute Handle Set.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/Destroy Attribute Handle Set.vi"/>
-			<Item Name="Destroy Attribute Handle Value Map.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Destroy Attribute Handle Value Map.vi"/>
-			<Item Name="destroy Federation Execution.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/destroy Federation Execution.vi"/>
-			<Item Name="Destroy Parameter Handle Value Map.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Destroy Parameter Handle Value Map.vi"/>
-			<Item Name="destroy RTI ambassador.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/destroy RTI ambassador.vi"/>
-			<Item Name="disconnect.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/disconnect.vi"/>
-			<Item Name="discoverObjectInstanceEvent_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/discoverObjectInstanceEvent_type.ctl"/>
-			<Item Name="Get Attribute (Raw).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Get Attribute (Raw).vi"/>
-			<Item Name="Get Attribute Handle by Index.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Get Attribute Handle by Index.vi"/>
-			<Item Name="get Attribute Handle.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/get Attribute Handle.vi"/>
-			<Item Name="get Interaction Class Handle.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/get Interaction Class Handle.vi"/>
-			<Item Name="get Object Class Handle.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/get Object Class Handle.vi"/>
-			<Item Name="Get Parameter (Raw).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Get Parameter (Raw).vi"/>
-			<Item Name="Get Parameter Handle by Index.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Get Parameter Handle by Index.vi"/>
-			<Item Name="get Parameter Handle.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/get Parameter Handle.vi"/>
 			<Item Name="HLA Data Conversion.lvlib" Type="Library" URL="../Data Encoding_Decoding/HLA Data Conversion.lvlib"/>
-			<Item Name="hla_vendor_type.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/hla/hla_vendor_type.ctl"/>
-			<Item Name="Insert Element to Attribute Handle Set.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Set/Insert Element to Attribute Handle Set.vi"/>
-			<Item Name="join Federation Execution.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/join Federation Execution.vi"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="objectInstance Cluster to String.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/helpers/objectInstance Cluster to String.vi"/>
-			<Item Name="OrderType.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/OrderType.ctl"/>
-			<Item Name="publish Interaction Class.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/publish Interaction Class.vi"/>
-			<Item Name="publish Object Class Attributes.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/publish Object Class Attributes.vi"/>
-			<Item Name="receiveInteractionEvent_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/receiveInteractionEvent_type.ctl"/>
-			<Item Name="reflectAttributeValuesEvent_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/reflectAttributeValuesEvent_type.ctl"/>
-			<Item Name="register Callbacks.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/register Callbacks.vi"/>
-			<Item Name="register Object Instance.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/register Object Instance.vi"/>
-			<Item Name="removeObjectInstanceEvent_type.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/removeObjectInstanceEvent_type.ctl"/>
-			<Item Name="reserve Object Instance Name.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/reserve Object Instance Name.vi"/>
-			<Item Name="resign Federation Execution.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/resign Federation Execution.vi"/>
-			<Item Name="ResignAction.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/ResignAction.ctl"/>
-			<Item Name="Send Interaction.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/Send Interaction.vi"/>
-			<Item Name="Set Attribute (Raw).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Attribute Handle Value Map/Set Attribute (Raw).vi"/>
-			<Item Name="Set Parameter (Raw).vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/helpers/Parameter Handle Value Map/Set Parameter (Raw).vi"/>
-			<Item Name="start RTI ambassador.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/start RTI ambassador.vi"/>
-			<Item Name="stop RTI ambassador.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/stop RTI ambassador.vi"/>
-			<Item Name="subscribe Interaction Class.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/subscribe Interaction Class.vi"/>
-			<Item Name="subscribe Object Class Attributes.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/subscribe Object Class Attributes.vi"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="TransportationType.ctl" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/typedefs/TransportationType.ctl"/>
-			<Item Name="update Attribute Values.vi" Type="VI" URL="../../../emea-ni-adg-hla-lv/src/library/update Attribute Values.vi"/>
 			<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../_Debug/VsDebugLibrary.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">

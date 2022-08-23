@@ -7,7 +7,6 @@
 		<Item Name="Init" Type="Folder">
 			<Item Name="build local designator settings string (MAK).vi" Type="VI" URL="../Init/build local designator settings string (MAK).vi"/>
 			<Item Name="Get list of FOM initialization steps.vi" Type="VI" URL="../Init/Get list of FOM initialization steps.vi"/>
-			<Item Name="Initialize HLA helpers.vi" Type="VI" URL="../Init/Initialize HLA helpers.vi"/>
 			<Item Name="Initialize Interaction Map (incoming).vi" Type="VI" URL="../Init/Initialize Interaction Map (incoming).vi"/>
 			<Item Name="Initialize Interaction Map (outgoing).vi" Type="VI" URL="../Init/Initialize Interaction Map (outgoing).vi"/>
 			<Item Name="Initialize Object Map.vi" Type="VI" URL="../Init/Initialize Object Map.vi"/>
@@ -15,6 +14,10 @@
 		</Item>
 		<Item Name="Run" Type="Folder">
 			<Item Name="_subVIs" Type="Folder">
+				<Item Name="Data Types" Type="Folder">
+					<Item Name="DecodeData.vi" Type="VI" URL="../_subVIs/DataTypes/DecodeData.vi"/>
+					<Item Name="Encode Data.vi" Type="VI" URL="../_subVIs/DataTypes/Encode Data.vi"/>
+				</Item>
 				<Item Name="helpers" Type="Folder">
 					<Item Name="Message Queue.lvlib" Type="Library" URL="../_subVIs/MessageQueue/Message Queue.lvlib"/>
 					<Item Name="User Events.lvlib" Type="Library" URL="../_subVIs/UserEvents/User Events.lvlib"/>
@@ -36,6 +39,7 @@
 				<Item Name="Check Loop Error.vi" Type="VI" URL="../_subVIs/Check Loop Error.vi"/>
 				<Item Name="Error Handler - Event Handling Loop.vi" Type="VI" URL="../_subVIs/Error Handler - Event Handling Loop.vi"/>
 				<Item Name="Error Handler - Message Handling Loop.vi" Type="VI" URL="../_subVIs/Error Handler - Message Handling Loop.vi"/>
+				<Item Name="Initialize Attributre-Parameter Map.vi" Type="VI" URL="../Init/Initialize Attributre-Parameter Map.vi"/>
 			</Item>
 			<Item Name="HLA Custom Device.Async.vi" Type="VI" URL="../HLA Custom Device.Async.vi"/>
 			<Item Name="Inline Write (Interactions).vi" Type="VI" URL="../Inline Write (Interactions).vi"/>

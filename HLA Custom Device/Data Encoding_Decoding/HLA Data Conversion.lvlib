@@ -10,5 +10,6 @@
 	<Item Name="Decode.vit" Type="VI" URL="../Decode.vit"/>
 	<Item Name="Encode.vit" Type="VI" URL="../Encode.vit"/>
 	<Item Name="Get HLAfloat64BE.vi" Type="VI" URL="../Get HLAfloat64BE.vi"/>
+	<Item Name="Set fixed_coords.vi" Type="VI" URL="../custom/Set fixed_coords.vi"/>
 	<Item Name="Set HLAfloat64BE.vi" Type="VI" URL="../Set HLAfloat64BE.vi"/>
 </Library>

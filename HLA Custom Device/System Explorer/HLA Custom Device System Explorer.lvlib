@@ -36,6 +36,7 @@
 		<Item Name="Scripting" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="HLA data types" Type="Folder">
+				<Item Name="Create Custom element (fixed_coords).vi" Type="VI" URL="../Scripting/HLA_DataTypes/Create Custom element (fixed_coords).vi"/>
 				<Item Name="Create Single element (Generic).vi" Type="VI" URL="../Scripting/HLA_DataTypes/Create Single element (Generic).vi"/>
 			</Item>
 			<Item Name="newSubVI.vit" Type="VI" URL="../newSubVI.vit"/>
