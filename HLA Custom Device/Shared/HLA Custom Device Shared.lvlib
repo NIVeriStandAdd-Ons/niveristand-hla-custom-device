@@ -18,4 +18,5 @@
 		</Item>
 		<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 	</Item>
+	<Item Name="create object id.vi" Type="VI" URL="../create object id.vi"/>
 </Library>

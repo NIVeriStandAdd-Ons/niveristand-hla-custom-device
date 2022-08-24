@@ -56,7 +56,7 @@
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Types" Type="Folder"/>
-			<Item Name="Add file to depencencies.vi" Type="VI" URL="../Add file to depencencies.vi"/>
+			<Item Name="Add file to dependencie.vi" Type="VI" URL="../Add file to dependencie.vi"/>
 			<Item Name="Load Help File.vi" Type="VI" URL="../Load Help File.vi"/>
 			<Item Name="Retrieve Async Section configuration properties (interactions).vi" Type="VI" URL="../Retrieve Async Section configuration properties (interactions).vi"/>
 			<Item Name="Retrieve Async Section configuration properties (objects).vi" Type="VI" URL="../Retrieve Async Section configuration properties (objects).vi"/>
@@ -67,4 +67,6 @@
 			<Item Name="Retrieve Inline Section configuration properties (objects).vi" Type="VI" URL="../Retrieve Inline Section configuration properties (objects).vi"/>
 		</Item>
 	</Item>
+	<Item Name="Initialize configuration property (interaction).vi" Type="VI" URL="../Initialize configuration property (interaction).vi"/>
+	<Item Name="Initialize configuration property (object).vi" Type="VI" URL="../Initialize configuration property (object).vi"/>
 </Library>

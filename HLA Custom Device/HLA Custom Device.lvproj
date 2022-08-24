@@ -189,7 +189,7 @@
 				<Property Name="Destination[2].path" Type="Path">../Built/NI_AB_PROJECTNAME/Windows/HLA Custom Device Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2CDCD2EA-0D3E-4EA7-AF1B-157C7C0241D5}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{1287E9C8-E778-4A4E-8231-94116CB2D3C2}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
