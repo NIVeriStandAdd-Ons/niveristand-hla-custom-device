@@ -28,13 +28,17 @@
 					<Item Name="build map_object_key.vi" Type="VI" URL="../_subVIs/build map_object_key.vi"/>
 					<Item Name="build Object Information payload.vi" Type="VI" URL="../_subVIs/build Object Information payload.vi"/>
 					<Item Name="build unique object Insance name.vi" Type="VI" URL="../_subVIs/build unique object Insance name.vi"/>
-					<Item Name="get Interaction Information element by name.vi" Type="VI" URL="../_subVIs/get Interaction Information element by name.vi"/>
-					<Item Name="get Object Information element by name.vi" Type="VI" URL="../_subVIs/get Object Information element by name.vi"/>
+					<Item Name="get incoming Interaction Information element by name.vi" Type="VI" URL="../_subVIs/get incoming Interaction Information element by name.vi"/>
+					<Item Name="get incoming object Information element by name.vi" Type="VI" URL="../_subVIs/get incoming object Information element by name.vi"/>
+					<Item Name="get outgoing Interaction Information element by name.vi" Type="VI" URL="../_subVIs/get outgoing Interaction Information element by name.vi"/>
+					<Item Name="get outgoing object Information element by name.vi" Type="VI" URL="../_subVIs/get outgoing object Information element by name.vi"/>
 					<Item Name="Register Discovered Object Instance (incoming).vi" Type="VI" URL="../_subVIs/Register Discovered Object Instance (incoming).vi"/>
 					<Item Name="Update VS channels (interaction data).vi" Type="VI" URL="../Update VS channels (interaction data).vi"/>
-					<Item Name="Update VS channels (interaction info).vi" Type="VI" URL="../Update VS channels (interaction info).vi"/>
 					<Item Name="Update VS channels (object data).vi" Type="VI" URL="../_subVIs/Update VS channels (object data).vi"/>
-					<Item Name="Update VS channels (object info).vi" Type="VI" URL="../_subVIs/Update VS channels (object info).vi"/>
+					<Item Name="Update VS channels - incoming (interaction info).vi" Type="VI" URL="../Update VS channels - incoming (interaction info).vi"/>
+					<Item Name="Update VS channels - incoming - (object info).vi" Type="VI" URL="../_subVIs/Update VS channels - incoming - (object info).vi"/>
+					<Item Name="Update VS channels - outgoing (interaction info).vi" Type="VI" URL="../Update VS channels - outgoing (interaction info).vi"/>
+					<Item Name="Update VS channels - outgoing (object info).vi" Type="VI" URL="../Update VS channels - outgoing (object info).vi"/>
 				</Item>
 				<Item Name="Check Loop Error.vi" Type="VI" URL="../_subVIs/Check Loop Error.vi"/>
 				<Item Name="Error Handler - Event Handling Loop.vi" Type="VI" URL="../_subVIs/Error Handler - Event Handling Loop.vi"/>
@@ -51,30 +55,38 @@
 	</Item>
 	<Item Name="Types" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
+		<Item Name="information channels" Type="Folder">
+			<Item Name="object_info_received_type.ctl" Type="VI" URL="../_typedefs/object_info_received_type.ctl"/>
+			<Item Name="interaction_info_outgoing_type.ctl" Type="VI" URL="../_typedefs/interaction_info_outgoing_type.ctl"/>
+			<Item Name="object_info_outgoing_type.ctl" Type="VI" URL="../_typedefs/object_info_outgoing_type.ctl"/>
+			<Item Name="interaction_info_incoming_type.ctl" Type="VI" URL="../_typedefs/interaction_info_incoming_type.ctl"/>
+		</Item>
+		<Item Name="maps" Type="Folder">
+			<Item Name="map_object_key.ctl" Type="VI" URL="../_typedefs/map_object_key.ctl"/>
+			<Item Name="map_attr_param_data.ctl" Type="VI" URL="../_typedefs/map_attr_param_data.ctl"/>
+			<Item Name="map_in_interaction.ctl" Type="VI" URL="../_typedefs/map_in_interaction.ctl"/>
+			<Item Name="map_interaction_value.ctl" Type="VI" URL="../_typedefs/map_interaction_value.ctl"/>
+			<Item Name="map_object.ctl" Type="VI" URL="../_typedefs/map_object.ctl"/>
+			<Item Name="map_object_instance.ctl" Type="VI" URL="../_typedefs/map_object_instance.ctl"/>
+			<Item Name="map_object_instance_value.ctl" Type="VI" URL="../_typedefs/map_object_instance_value.ctl"/>
+			<Item Name="map_object_value.ctl" Type="VI" URL="../_typedefs/map_object_value.ctl"/>
+			<Item Name="map_out_vs_ch_objects_value.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_objects_value.ctl"/>
+			<Item Name="map_out_vs_ch_instanceId.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_instanceId.ctl"/>
+			<Item Name="map_out_vs_ch_objects.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_objects.ctl"/>
+			<Item Name="map_out_vs_ch_interactIonClass.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_interactIonClass.ctl"/>
+			<Item Name="map_object_vs_instance.ctl" Type="VI" URL="../_typedefs/map_object_vs_instance.ctl"/>
+		</Item>
+		<Item Name="hla user events" Type="Folder">
+			<Item Name="RTruntimeData.ctl" Type="VI" URL="../RTruntimeData.ctl"/>
+			<Item Name="dataElement_type.ctl" Type="VI" URL="../_typedefs/dataElement_type.ctl"/>
+			<Item Name="interaction_attribute_received_type.ctl" Type="VI" URL="../_typedefs/interaction_attribute_received_type.ctl"/>
+			<Item Name="receiveInteraction_type.ctl" Type="VI" URL="../_typedefs/receiveInteraction_type.ctl"/>
+			<Item Name="reflectAttributeValues_type.ctl" Type="VI" URL="../_typedefs/reflectAttributeValues_type.ctl"/>
+			<Item Name="discoverObjectInstance_type.ctl" Type="VI" URL="../_typedefs/discoverObjectInstance_type.ctl"/>
+		</Item>
 		<Item Name="AsyncDataSpace.ctl" Type="VI" URL="../_typedefs/AsyncDataSpace.ctl"/>
-		<Item Name="dataElement_type.ctl" Type="VI" URL="../_typedefs/dataElement_type.ctl"/>
-		<Item Name="map_object_vs_instance.ctl" Type="VI" URL="../_typedefs/map_object_vs_instance.ctl"/>
-		<Item Name="interaction_attribute_received_type.ctl" Type="VI" URL="../_typedefs/interaction_attribute_received_type.ctl"/>
-		<Item Name="interaction_info_received_type.ctl" Type="VI" URL="../_typedefs/interaction_info_received_type.ctl"/>
-		<Item Name="map_attr_param_data.ctl" Type="VI" URL="../_typedefs/map_attr_param_data.ctl"/>
-		<Item Name="map_in_interaction.ctl" Type="VI" URL="../_typedefs/map_in_interaction.ctl"/>
-		<Item Name="map_interaction_value.ctl" Type="VI" URL="../_typedefs/map_interaction_value.ctl"/>
-		<Item Name="map_object.ctl" Type="VI" URL="../_typedefs/map_object.ctl"/>
-		<Item Name="map_object_instance.ctl" Type="VI" URL="../_typedefs/map_object_instance.ctl"/>
-		<Item Name="map_object_instance_value.ctl" Type="VI" URL="../_typedefs/map_object_instance_value.ctl"/>
-		<Item Name="map_object_value.ctl" Type="VI" URL="../_typedefs/map_object_value.ctl"/>
-		<Item Name="discoverObjectInstance_type.ctl" Type="VI" URL="../_typedefs/discoverObjectInstance_type.ctl"/>
-		<Item Name="object_info_received_type.ctl" Type="VI" URL="../_typedefs/object_info_received_type.ctl"/>
-		<Item Name="receiveInteraction_type.ctl" Type="VI" URL="../_typedefs/receiveInteraction_type.ctl"/>
-		<Item Name="reflectAttributeValues_type.ctl" Type="VI" URL="../_typedefs/reflectAttributeValues_type.ctl"/>
-		<Item Name="RTruntimeData.ctl" Type="VI" URL="../RTruntimeData.ctl"/>
 		<Item Name="RTStateVariables.ctl" Type="VI" URL="../RTStateVariables.ctl"/>
-		<Item Name="map_object_key.ctl" Type="VI" URL="../_typedefs/map_object_key.ctl"/>
 		<Item Name="RThlaMapHelpers.ctl" Type="VI" URL="../_typedefs/RThlaMapHelpers.ctl"/>
-		<Item Name="map_out_vs_ch_objects_value.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_objects_value.ctl"/>
-		<Item Name="map_out_vs_ch_instanceId.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_instanceId.ctl"/>
-		<Item Name="map_out_vs_ch_objects.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_objects.ctl"/>
-		<Item Name="map_out_vs_ch_interactIonClass.ctl" Type="VI" URL="../_typedefs/map_out_vs_ch_interactIonClass.ctl"/>
 	</Item>
 	<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
 </Library>

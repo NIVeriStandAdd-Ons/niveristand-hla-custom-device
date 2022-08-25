@@ -2,7 +2,7 @@
 <Project Type="Project" LVVersion="19008000">
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
-		<Property Name="CCSymbols" Type="Str">DEBUG,True;</Property>
+		<Property Name="CCSymbols" Type="Str">DEBUG,False;</Property>
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
 		<Property Name="IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
@@ -1047,7 +1047,7 @@ DirectoryIndex index.htm
 	<Item Name="RT CompactRIO Target - Linux x64" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">RT CompactRIO Target - Linux x64</Property>
 		<Property Name="alias.value" Type="Str">192.168.0.27</Property>
-		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;DeviceCode,7735;CD_MOCKUP,False;DEBUG,True;TARGET_TYPE,RT;</Property>
+		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;DeviceCode,7735;CD_MOCKUP,False;DEBUG,False;TARGET_TYPE,RT;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">7735</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
