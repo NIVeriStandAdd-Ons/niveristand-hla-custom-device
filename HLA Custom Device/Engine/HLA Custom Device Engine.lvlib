@@ -23,6 +23,7 @@
 					<Item Name="User Events.lvlib" Type="Library" URL="../_subVIs/UserEvents/User Events.lvlib"/>
 				</Item>
 				<Item Name="ObjectManagement" Type="Folder">
+					<Item Name="Add Discovered Object Instance (incoming).vi" Type="VI" URL="../_subVIs/Add Discovered Object Instance (incoming).vi"/>
 					<Item Name="Build InteractionInfo payload.vi" Type="VI" URL="../_subVIs/Build InteractionInfo payload.vi"/>
 					<Item Name="build InteractionParameterReceived payload.vi" Type="VI" URL="../_subVIs/build InteractionParameterReceived payload.vi"/>
 					<Item Name="build map_object_key.vi" Type="VI" URL="../_subVIs/build map_object_key.vi"/>
@@ -32,7 +33,6 @@
 					<Item Name="get incoming object Information element by name.vi" Type="VI" URL="../_subVIs/get incoming object Information element by name.vi"/>
 					<Item Name="get outgoing Interaction Information element by name.vi" Type="VI" URL="../_subVIs/get outgoing Interaction Information element by name.vi"/>
 					<Item Name="get outgoing object Information element by name.vi" Type="VI" URL="../_subVIs/get outgoing object Information element by name.vi"/>
-					<Item Name="Register Discovered Object Instance (incoming).vi" Type="VI" URL="../_subVIs/Register Discovered Object Instance (incoming).vi"/>
 					<Item Name="Update VS channels (interaction data).vi" Type="VI" URL="../Update VS channels (interaction data).vi"/>
 					<Item Name="Update VS channels (object data).vi" Type="VI" URL="../_subVIs/Update VS channels (object data).vi"/>
 					<Item Name="Update VS channels - incoming (interaction info).vi" Type="VI" URL="../Update VS channels - incoming (interaction info).vi"/>
@@ -40,10 +40,13 @@
 					<Item Name="Update VS channels - outgoing (interaction info).vi" Type="VI" URL="../Update VS channels - outgoing (interaction info).vi"/>
 					<Item Name="Update VS channels - outgoing (object info).vi" Type="VI" URL="../Update VS channels - outgoing (object info).vi"/>
 				</Item>
+				<Item Name="Add incoming ObjectInstance Record.vi" Type="VI" URL="../_subVIs/Add incoming ObjectInstance Record.vi"/>
 				<Item Name="Check Loop Error.vi" Type="VI" URL="../_subVIs/Check Loop Error.vi"/>
+				<Item Name="Delete incoming ObjectInstance Record.vi" Type="VI" URL="../_subVIs/Delete incoming ObjectInstance Record.vi"/>
 				<Item Name="Error Handler - Event Handling Loop.vi" Type="VI" URL="../_subVIs/Error Handler - Event Handling Loop.vi"/>
 				<Item Name="Error Handler - Message Handling Loop.vi" Type="VI" URL="../_subVIs/Error Handler - Message Handling Loop.vi"/>
-				<Item Name="Initialize Attributre-Parameter Map.vi" Type="VI" URL="../Init/Initialize Attributre-Parameter Map.vi"/>
+				<Item Name="Initialize Attribute-Parameter Map.vi" Type="VI" URL="../Init/Initialize Attribute-Parameter Map.vi"/>
+				<Item Name="Remove Discovered Object Instance by handle (incoming).vi" Type="VI" URL="../_subVIs/Remove Discovered Object Instance by handle (incoming).vi"/>
 			</Item>
 			<Item Name="HLA Custom Device.Async.vi" Type="VI" URL="../HLA Custom Device.Async.vi"/>
 			<Item Name="Inline Write (Interactions).vi" Type="VI" URL="../Inline Write (Interactions).vi"/>

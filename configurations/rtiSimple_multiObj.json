@@ -1,0 +1,62 @@
+{
+  "publish":
+  {
+    "objects": [
+      {
+        "name": "BaseEntity",
+        "attributes": [
+          {
+            "name": "WorldLocation",
+            "type": "String"
+          }
+        ],
+        "instanceId": 0
+      }
+    ],
+    "interactions": [
+      {
+        "name": "WeaponFire",
+        "parameters": [
+          {
+            "name": "FuseType",
+            "type": "c"
+          },
+          {
+            "name": "RateOfFire",
+            "type": "e"
+          }
+        ]
+      }
+    ]
+  },
+  "subscribe":
+  {
+    "objects": [
+      {
+        "name": "BaseEntity",
+        "attributes": [
+          {
+            "name": "WorldLocation",
+            "type": "String"
+          }
+        ],
+        "instanceId": 0
+      }
+    ],
+    "interactions": [
+      {
+        "name": "WeaponFire",
+        "parameters": [
+          {
+            "name": "FuseType",
+            "type": "c"
+          },
+          {
+            "name": "RateOfFire",
+            "type": "e"
+          }
+        ]
+      }
+    ]
+  }
+}
