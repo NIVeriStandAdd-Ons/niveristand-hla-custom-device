@@ -9,7 +9,6 @@
 				<Item Name="ActionVIOnCompile.vi" Type="VI" URL="../ActionVIOnCompile.vi"/>
 				<Item Name="ActionVIOnDownload.vi" Type="VI" URL="../ActionVIOnDownload.vi"/>
 				<Item Name="ActionVIOnLoad.vi" Type="VI" URL="../ActionVIOnLoad.vi"/>
-				<Item Name="ActionVIOnShutdown.vi" Type="VI" URL="../ActionVIOnShutdown.vi"/>
 			</Item>
 			<Item Name="Extra Pages" Type="Folder">
 				<Item Name="Attribute.vi" Type="VI" URL="../Attribute.vi"/>

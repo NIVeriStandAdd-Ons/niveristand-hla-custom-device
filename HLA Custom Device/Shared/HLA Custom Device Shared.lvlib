@@ -15,6 +15,7 @@
 			<Item Name="object_managament_config.ctl" Type="VI" URL="../object_managament_config.ctl"/>
 			<Item Name="object_status_info.ctl" Type="VI" URL="../object_status_info.ctl"/>
 			<Item Name="rt_init_state.ctl" Type="VI" URL="../rt_init_state.ctl"/>
+			<Item Name="vs_obj_id_state.ctl" Type="VI" URL="../vs_obj_id_state.ctl"/>
 		</Item>
 		<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 	</Item>

@@ -41,6 +41,16 @@
           }
         ],
         "instanceId": 0
+      },
+	  {
+        "name": "BaseEntity",
+        "attributes": [
+          {
+            "name": "WorldLocation",
+            "type": "String"
+          }
+        ],
+        "instanceId": 1
       }
     ],
     "interactions": [
