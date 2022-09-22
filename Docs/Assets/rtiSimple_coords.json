@@ -19,11 +19,11 @@
         "parameters": [
           {
             "name": "FuseType",
-            "type": "c"
+            "type": "HLAfloat64BE"
           },
           {
             "name": "RateOfFire",
-            "type": "e"
+            "type": "HLAfloat64BE"
           }
         ]
       }
@@ -49,11 +49,11 @@
         "parameters": [
           {
             "name": "FuseType",
-            "type": "c"
+            "type": "HLAfloat64BE"
           },
           {
             "name": "RateOfFire",
-            "type": "e"
+            "type": "HLAfloat64BE"
           }
         ]
       }
