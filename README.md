@@ -24,7 +24,7 @@ To request a new feature, feel free to contribute yourself or ask for it through
 ## Using the custom device
 
 - Download the latest package/zip file from the [Releases page](https://github.com/NIVeriStandAdd-Ons/niveristand-hla-custom-device/releases)
-- See the [User Guide]() for a walthrough of using the custom device
+- See the [User Guide](Docs/User%20Guide.md) for a walthrough of using the custom device
 - See the [FOM import documentation]() for configuring the list of object/attributes that the custom device will exchange inside the federation
 
 ## Requirements
