@@ -1,15 +1,35 @@
 # HLA Custom Device
 
-The **HLA Custom Device** allows users to use a Veristand based system as an HLA federate on a RTI network.
+The **HLA Custom Device** allows users to use a Veristand based system as an [HLA](https://en.wikipedia.org/wiki/High_Level_Architecture) federate on a RTI network.
+
+The custom device supports the folloiwng functionality:
+- *Federation Management*: Connect/disconnect federate from RTI, create and join federation executions
+- *Declaration Management*: Publish/Subscribe Object class attributes and Interaction Parameters
+- *Object Management*: Reserve/Register object instances, Update/Reflect Attribute values, Send/Receive interactions
+- *Ownership Management*: not implemented yet
+- *Time Management*: not implemented yet
+- *Data Distribution Management*: not implemented yet
+- *Management Object Model*: not implemented yet
+
+The custom device supports the following vendors of RTI/LRC:
+
+- [MAK Technologies](https://www.mak.com/solutions-category/index.php?option=com_content&view=article&id=81&Itemid=108)
+
+The custom device supports the following Operating Systems:
+
+- [NI Linux RT](https://www.ni.com/it-it/shop/linux/introduction-to-ni-linux-real-time.html)
+
+To request a new feature, feel free to contribute yourself or ask for it through the [issues](https://github.com/NIVeriStandAdd-Ons/niveristand-hla-custom-device/issues) page by labelling your request as an `enhancement`
 
 ## Using the custom device
 
-- Download and install dependencies on RT target. Refer to the [Dependency list](https://github.com/NIVeriStandAdd-Ons/niveristand-hla-custom-device/releases/tag/v0.9)
 - Download the latest package/zip file from the [Releases page](https://github.com/NIVeriStandAdd-Ons/niveristand-hla-custom-device/releases)
+- See the [User Guide]() for a walthrough of using the custom device
+- See the [FOM import documentation]() for configuring the list of object/attributes that the custom device will exchange inside the federation
 
 ## Requirements
 
-- Any Linux RT controller (cRIO or PXI)
+- Any Linux RT controller (cRIO or PXI) with 19.x system image
 - A valid MAK RTI License for Linux systems, as described in the [MAK RTI User Guide](https://www.mak.com/product-user-guides/932-mak-rti-4-6-users-guide/file). 
 
 ## LabVIEW Source Code Version
