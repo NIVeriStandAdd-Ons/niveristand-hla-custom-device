@@ -37,15 +37,19 @@ This guide shows two options for configuring the custom device:
 3. Right-click the **Custom Devices** entry and add a new instance of the **HLA Custom Device** custom device.
 4. Select *New Custom Device Instance* if you want to create a custom device from scratch or *Load Custom Device Configuration from File* if you want to load a previously exported configuration.
 5. Use the Main Page to set the following required parameters:
-- **MAK configuration file (.mtl)** : the .mtl with the configuration parameters to connect to the MAK rti.
-- **FOM Module** : the FOM xml file.
-- **Federation  Execution Name** : The federation execution that you want to create/join.
-![System Explorer Main Page](Screenshots/systemExplorer_mainPage.PNG)
-5. Right-click on the Main Page and select **Browse FOM File**
-6. Click the borwse button from the *FOM export information file (.json)* and select one of the .json file at `niveristand-aim-milStd1553-custom-device\Docs\User Guide\Assets\Parameters.xml`
+  - **MAK configuration file (.mtl)** : the .mtl with the configuration parameters to connect to the MAK rti.
+  - **FOM Module** : the FOM xml file.
+  - **Federation  Execution Name** : The federation execution that you want to create/join.
+  
+  ![System Explorer Main Page](Screenshots/systemExplorer_mainPage.PNG)
+
+6. Right-click on the Main Page and select **Browse FOM File**
+
+7. Click the browse button from the *FOM export information file (.json)* and select one of the .json file at `Docs\Assets` folder.
+
 ![System Explorer Configuration Files](Screenshots/systemExplorer_browseFOM.PNG)
 
-Note: After configuring the custom device, all of the configuration under `Channel` is read-only except for the `Description` field on each page.
+8. Press *Load* button to have a preview of the objects / interactions that will be loaded. To effectively apply your selection to the system explorer, you have to press the **OK** button to exit.
 
 ![System Explorer Parameter](Screenshots/systemExplorer_tree.PNG)
 
