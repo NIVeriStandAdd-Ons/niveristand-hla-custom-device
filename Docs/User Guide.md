@@ -19,7 +19,7 @@ The [MÄK High Performance RTI](https://www.mak.com/mak-one/infrastructure/mak-r
 with 
 
 ```
-(setqb RTI_tcpForwarderAddr "<IP of the Desktop PC with Xplane>")
+(setqb RTI_tcpForwarderAddr "<IP of the Machine with RTI forwarder/rtiexec>")
 ```
 
 Refer to the MAK documentation (e.g. the RTIx.yUsersGuide.pdf) to get more information about how to work with MTL (MAK Technologies Lisp) files.
